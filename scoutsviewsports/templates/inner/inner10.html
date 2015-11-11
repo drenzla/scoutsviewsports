@@ -1,0 +1,180 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/photos/user-pic_02.jpg">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Athletic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">Media <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Manager</span></a></li>
+                                <li><a href="#">Academic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Stars <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Networks <span class="block">Manager</span></a></li>
+                                <li class="active"><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-12">
+                        <div class="row"><span class="ticker-msg">This is a custom message ticker for user</span></div>
+                    </div>
+                    <div class="col-md-4  col-sm-5 col-xs-12 fr ticker-details">
+                        <ul class="fr">
+                            <li>
+                                <img src="images/icons/friends.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container academic-profile-container scoutsview-vdo">
+                <div class="col-md-12">
+                        <div class="col-md-9 col-sm-12 col-xs-12 left-zero">
+                            <div class="vdo">
+                            <a href="#"><img class="img-responsive" src="images/video-img.jpg" width="788" height="480" alt="img"></a>
+                            <div class="plya-btn">
+                                <span><em>Mike Richardson’s<br> Orientation Video</em>
+                                <a href="#"><img src="images/play-btn.png" width="80" height="80" alt="img"></a>
+                                <em>For Athletes</em>
+    </span>
+                            </div>
+                            </div>
+                            <div class="confirmation">
+                            <span>Enter your initials to confirm you understand the rules and regulations of Scoutsview and intend to abide by them</span><input type="text" value="RV"> <input type="button" value="Send Confirmation" class="btn">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="vdo-blogs">
+                            <h3>Most Recent Video Blogs</h3>
+                            <ul>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+                                <li><a href="#">Video Title will go here in two
+                                lines or more, etc &raquo;</a></li>
+    
+                            </ul>
+                            </div>
+                            <input type="button" value="Show all Video Blogs" class="vdo-btn">
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+		
+{% endblock %}

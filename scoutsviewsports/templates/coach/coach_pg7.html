@@ -1,0 +1,145 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+		<header class="header no-border">
+        	<div class="coach-bg ">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/coach-images/coach_pg2a_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Coach</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Nick Saban</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+
+
+
+
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Coach Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Star <span class="block">Athletes</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Coach Network <span class="block">Manager</span></a></li>
+                                <li class="active"><a href="#">My Prototype <span class="block">Athlete Search</span></a></li>
+                                <li><a href="#">Stats and <span class="block">Analytics</span></a></li>
+                                <li><a href="#">Coach <span class="block">Resources</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <div class="row"><span class="ticker-msg">All posted messages between you and athlete are kept confidential</span></div>
+                        
+                    </div>
+                    <div class="col-md-2  col-sm-2 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count">1</span>
+                                <img src="images/coach-images/msg.png"  alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container academic-profile-container">
+            <div class="col-md-12">
+            	<div class="row">
+               		<p class="coach-msg">This section needs to be defined and we will need your help in developing a more robust mechanism that allows a coach to enter parameters for the perfect prototype athlete and receive results based on that specific match. Think of it as a very advanced search. If there are no players that match the criteria then the coach can choose to receive a text or email as soon as that prototype player comes online.</p>
+            	</div>
+            </div>
+            
+        </div>
+
+		
+        <script type="text/javascript">
+			$('#grade-select').selectbox();
+			$('#grad-select').selectbox();
+		</script>
+{% endblock %}

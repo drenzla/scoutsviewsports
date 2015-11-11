@@ -1,0 +1,242 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+		<header class="header no-border">
+        	<div class="coach-bg ">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/coach-images/coach_pg2a_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Coach</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Nick Saban</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li class="active"><a href="#">Coach Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Star <span class="block">Athletes</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Coach Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Prototype <span class="block">Athlete Search</span></a></li>
+                                <li><a href="#">Stats and <span class="block">Analytics</span></a></li>
+                                <li><a href="#">Coach <span class="block">Resources</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="row"><span class="ticker-msg">Welcome to Scoutsview</span></div>
+                        
+                    </div>
+                    <div class="col-md-4  col-sm-4 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container academic-profile-container inner-3">
+        <div class="row">
+            	<div class="col-md-2">
+                	<div class="profile-image center">
+                    	<img src="images/coach-images/coach_pg12a_1_03.png" alt="">
+                        <p><a href="#">Edit Profile Image</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                <div class="row fan-details">
+                	<div class=" col-md-12 profile-details mbl">
+                    	<div class="row">
+                    	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                    	<h3>Coach Nick Saban</h3>
+                        <p>Lousiana State University</p>
+                        <p>Baton Rogue, Lousiana</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    	<input type="text" placeholder="Years Coaching" class="mbm yrs">
+                    	<input type="text" placeholder="Sports I Coach"><span class="glyphicon glyphicon-plus"></span>
+                        <ul class="fav-team-list mbm">
+                        	<li>Baseball</li>
+                            <li>Softball</li>
+                        </ul>
+                        <input type="text" placeholder="Notable Athletes Coached"><span class="glyphicon glyphicon-plus"></span>
+                        <ul class="fav-team-list">
+                        	<li>Pete Rose</li>
+                        </ul>
+                       
+                    </div>
+                    
+            
+                
+                 </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="row scout-tip">
+                        <div class="close-tip"></div>
+                        <div class="col-md-12">
+                            <div class="row">
+                            	<div class="scout-tip-right fl">
+                                	<h5 class="scout-alert">Scoutsview Respects your privacy as a coach</h5>
+                                	<p>By default we keep your profile private and visible to only athletes you award leaderboard stetson public and visible You can always change this your "My Account" page</p>
+                            	</div>
+                                <div class="scout-tip-left fr">
+                                	<input type="radio" id="sctr1">
+                                    <label for="sctr1">Make My Profile public and visible to everyone</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row scout-tip">
+                        <div class="close-tip"></div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <h5 class="scout-alert">Coach Verification</h5>
+                                <fieldset class="mbm upload-resume">
+                                    <input id="uploadFile1" type="text" placeholder="URL, PDF OR JPEG 7MB Limit" disabled="disabled" class="fl form-control">
+                                    <div class="fileUpload btn btn-primary fr">
+                                        <span>Browse</span>
+                                        <input type="file" class="upload form-control">
+                                    </div>
+                                </fieldset>
+                                <p>Scoutsview verifies the status of every coach sign up. Please submit proof that estab-lishes your identity as a coach of a school or other institution. It can be a URL that lists you as a coach, employment letter, check stub or any other documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        	<form method="post" class="mtl">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="athletic-profile">
+                            <div class="about-you">
+                                <div>
+                                    <fieldset>
+                                        <textarea placeholder="Add a short description about yourself (500 word limit)" class="form-control"></textarea>
+                                    </fieldset>
+                                </div>
+                                
+                            </div>
+                            <div class="about-you">
+                                <div>
+                                    <fieldset>
+                                        <textarea placeholder="Discuss your program. What are you looking for in an athlete? (500 word limit)" class="form-control"></textarea>
+                                    </fieldset>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <!--athletic-profile end-->
+                    </div>
+                </div>
+                <div class="fill-out">
+                    <a class="save-pro btn" href="#">Save Progress</a>
+                    <a class="prev-this btn" href="#">Preview This</a>
+                    <a  class="publish-page btn" href="#">Publish Page</a>
+                    <em>*You must fill out the required steps before you can publish your profile</em>
+                 </div>   
+            </form>
+        </div>      
+
+
+        
+        
+
+
+{% endblock %}

@@ -1,0 +1,895 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="fan-pg award-pg">  -->
+		<header class="header no-border">
+        	<div class="">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/fan-images/fan-photo_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Fan</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Mickey McCool</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Fan FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Fan Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Shine <span class="block">Stars</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan Group <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Photos</span></a></li>
+                                <li><a href="#">Fan <span class="block">News</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <div class="row">
+                        <div class="award-section">
+                            <div class="award-star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="">Award stars</span>
+                            </div>
+                            <div class="award-form">
+                                <form action="/">
+                                    <div class="confirmation-txt">
+                                        <p>You awarded this athlete</p>
+                                        <p class="green">10 My Shine Star</p>
+                                    </div>
+                                </form>
+                                <div class="close-form">
+                                    <img src="images/award-images/circle_image.png">
+                                </div>
+                                <p>
+                                    <span class="glyphicon glyphicon-star green"></span>
+                                    <span class="mrl">  = 1430</span>
+                                    <span class="glyphicon glyphicon-star gold"></span>
+                                    <span> = 1430</span>
+                                </p>
+                            </div>
+                         </div>
+                        <span class="ticker-msg">This is preview of your profile</span></div>
+                        
+                    </div>
+                    <div class="col-md-6  col-sm-4 fr">
+                    	
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends">
+                                
+                            </li>
+                        </ul>
+                        <ul class="social-connect clearfix">
+                            <li>
+                                <a href="#"><img src="images/share_btn.jpg" alt="friends"></a>
+    
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/tweet_btn.jpg" alt="friends"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/email_btn.jpg" alt="friends"></a>
+                            </li>
+                        </ul>
+                        <div class="fr stars-available" title="My Shine Stars you have available to award">
+                        	<span class="glyphicon glyphicon-star"></span>
+                            <span class="count">78</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      	<div class="container inner-11">
+        	<div class="row">
+            	<div class="col-md-2">
+                	<div class="profile-image center">
+                    	<img src="images/profile-pic/john.png" alt="">
+                        <p><a href="#">Edit Profile Image</a></p>
+                    </div>
+                    <div class="become-fan mtm">
+                    	<a href="#"><img src="images/award-images/fan2a.png" alt="Become my fan button"></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                <div class="row">
+                	<div class="profile-details mbxxl">
+                    	<h3>Tommy Trahan</h3>
+                        <p>Newman Smith (Class of 2014)</p>
+                        <p>My Coach: Tim Dagan</p>
+                    </div>
+                    <div class="clearfix">
+                    	<ul class="col-md-4 inner11col1">
+                        	<li><span class="blue">Hometown:</span> Dallas, Texas</li>
+                            <li><span class="blue">School:</span> Texas A&amp;M</li>
+                            <li><span class="blue">Sport:</span> Soccer</li>
+                        </ul>
+                        <ul class="col-md-4 inner11col2">
+                        	<li><span class="blue">Position:</span> Forward</li>
+                            <li><span class="blue">Division:</span> II</li>
+                            <li><span class="blue">Height:</span> 6'1</li>
+                        </ul>
+                        <ul class="col-md-4 inner11col3">
+                        	<li><span class="blue">Weight:</span> 200 lbs.</li>
+                            <li><span class="blue">Bench:</span> 250 lbs.</li>
+                            <li><span class="blue">Squats:</span> 600 lbs.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="social">
+                        <div class="become-fan mrm">
+                            <a href="#"><img src="images/fav_btn.jpg" alt="Become my fan button"></a>
+                        </div>
+                    	<ul>
+                        	<li class="icon1">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon2">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon3">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon4">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon5">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon6">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon7">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon8">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon9">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon10">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon11">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon12">
+                            	<a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+                </div>
+                <div class="col-md-3">
+                	<div class="row">
+                        <div class="leaderboard-stars-count">
+                            <p>LEADERBOARD STARS</p>
+                            <div class="lstars-count">
+                                <span class="glyphicon glyphicon-star">=</span>
+                                <span class="count-val">123</span>
+                            </div>
+                        </div>
+                        <div class="shine-stars-count">
+                            <p>MY SHINE STARS</p>
+                            <div class="sstars-count">
+                                <span class="glyphicon glyphicon-star">=</span>
+                                <span class="count-val">123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="tabcontainer">
+                	<ul class="nav nav-tabs responsive hidden-xs hidden-sm" role="tablist" id="xyz">
+                      <li class="active"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+                      <li><a href="#stats" role="tab" data-toggle="tab">Stats</a></li>
+                      <li><a href="#film" role="tab" data-toggle="tab">Film</a></li>
+                      <li><a href="#photos" role="tab" data-toggle="tab">Photos</a></li>
+                      <li><a href="#forum" role="tab" data-toggle="tab">Forum</a></li>
+                      <li><a href="#fans" role="tab" data-toggle="tab">Fans</a></li>
+                      <li><a href="#academics" role="tab" data-toggle="tab">Academics</a></li>
+                    </ul>
+                    <div class="tab-content responsive hidden-xs hidden-sm">
+                      <div class="tab-pane active" id="profile">
+                      <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                      	<h3 class="heading-title">My Personal Statement...</h3>
+                        <p class="mbl">I want to play for the best college ever. I lettered in all sports in high school. I volunteered alot. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua.</p><p class="mtxxl"> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.</p>
+                      </div>
+                      <div class="tab-pane" id="stats">
+                      		<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                            	<ul>
+                                	<li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                    <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="stats-content">
+                            	<h3 class="heading-title">Basic Stats</h3>
+                                <ul>
+                                	<li><span class="blue">Position:</span> Forward</li>
+                                    <li><span class="blue">Division:</span> II</li>
+                                    <li><span class="blue">Height:</span> 6'1</li>
+                                    <li><span class="blue">Weight:</span> 200 lbs</li>
+                                    <li><span class="blue">Bench:</span> 250 lbs</li>
+                                    <li><span class="blue">Squats:</span> 600 lbs</li>
+                                    <li><span class="blue">40 Yard Dash:</span> 6 seconds</li>
+                                </ul>
+                                <p class="heading-title">
+                                	Full Stats will feed into this page
+                                </p>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="film">
+                      	<ul>
+                        	<li class="clearfix">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/profile-pic/vid1.jpg" class="fl" alt="Vid1">
+                                <h3 class="sub-heading-title">Title of video</h3>
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                 <a href="#">Read More</a></p>
+                                
+                            </li>
+                            <li class="clearfix">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/profile-pic/vid3.jpg" class="fl" alt="Vid1">
+                                <h3 class="sub-heading-title">Title of video</h3>
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                 <a href="#">Read More</a></p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/profile-pic/vid2.jpg" class="fl" alt="Vid1">
+                                <h3 class="sub-heading-title">Title of video</h3>
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                 <a href="#">Read More</a></p>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane clearfix" id="photos">
+                      	<ul>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_07.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_07.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane" id="forum">
+                      	<div class="row">
+                            <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-9 update-my-status">
+                                   
+                                    <div class="update-status details">
+            						<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                        <ul>
+                                            <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="you"><img src="images/fan.jpg" width="58" height="58" alt="img"><span>Fan</span></div>
+                                    <div class="post-status">
+                                        <span>Posted 06/13/13: <em>Mikey McCool</em></span>
+                                    <p>Mikey McCool awarded you 5 My Shine Stars<br>
+                                    Excellent profile. Very Impressed!</p>
+                                    <div class="fan-comment">
+                                     <span><em>You</em></span>
+                                     
+                                     <form class="post-news">
+                                            <textarea class="comment" placeholder="Add comment..."></textarea>
+                                     </form>
+                                    <div class="clearfix"></div>
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    </div>
+                                    <div class="update-status details coach">
+            
+                                    <div class="you"><img src="images/Coach.jpg" width="58" height="58" alt="img"><span>Coach</span></div>
+                                    <div class="post-status">
+                                        <span>Posted 06/13/13: <em>Nick Saban</em> &nbsp;<em class="private-post">*This post is private</em></span>
+                                    <p>Nick Saban awarded you 5 Leaderboard Stars</p>
+                                    <ul class="stars">
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                                        
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <div class="post-output">
+                                    <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                        <ul>
+                                            <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                            <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="you">
+                                    <img src="images/you.jpg" width="58" height="58" alt="img"><span>You</span>
+                                    </div>
+                                    <div class="posted-info">
+                                    <span>Posted 06/13/13:<em>Tommy Trahan</em> &nbsp;</span>
+                                    <p>Thanks Coach Saban!!</p>
+                                    </div>
+                                    </div>
+                                    <div class="fan-comment">
+                                     <span><em>You</em></span>
+                                     
+                                     <form class="post-news">
+                                            <textarea class="comment" placeholder="Add comment..."></textarea>
+                                     </form>
+                                    <div class="clearfix"></div>
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    </div>
+                                    
+                                    </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="filter-discussions">
+                                    <h3>Filter Discussions</h3>
+                                    <span>Show New Posts Only <a href="#">View All</a></span>
+                                    <h5>Search Forum</h5>
+                                    <div class="search">
+                                    <input type="text" value="Search by Keyword" class="search-input"><input type="button" value="Search" class="btn">
+                                    </div>
+                                    <div class="Coach-discusions discusions">
+                                    <h5>Coach Discussions</h5>
+                                    <ul>
+                                        <li><a href="#">Nick Saban</a> <em>2</em></li>
+                                        <li><a href="#">Coach Dan</a></li>
+                                        <li><a href="#">Coach Sam</a></li>
+                                        <li><a href="#">Scout Gary</a></li>
+                                        <li><a href="#">Peter Mcully</a></li>
+                                        <li><a href="#">Sam Johnson</a></li>
+                                    </ul>
+                                    <a class="view-more" href="#">View Moar</a>
+                                    </div>
+                                    <div class="fan-discusions discusions">
+                                    <h5>Fan Discussions</h5>
+                                    <ul>
+                                        <li><a href="#">Mikey McCool</a></li>
+                                        <li><a href="#">Tara Smith</a></li>
+                                        <li><a href="#">John Johnson</a></li>
+                                        <li><a href="#">Jane Parker</a></li>
+                                        <li><a href="#">Peter Mcully</a></li>
+                                        <li><a href="#">Elizabeth Taylor</a></li>
+                                    </ul>
+                                    <a class="view-more" href="#">View Moar</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+            </div>
+                      
+                      </div>
+                      <div class="tab-pane" id="fans">
+                      	<div class="fans-list clearfix">
+                        	<h3>You have 2123 fans</h3>
+                			<ul class="fan-group">		
+                                <li class="clearfix">
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan1.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Mikey McCool</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Mikey McCool</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan2.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12 ">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Tim Smith</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan3.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Janet Cole</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan4.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12 pdlm">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Helen Johnson</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Location</h3>
+                                                        <p>Dallas, TX</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan5.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>George Jetson</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/fan6.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Ryan Homeson</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Location</h3>
+                                                        <p>St Louis, MO</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/athlete_pg6_03.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Kayla Thompson</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-12">
+                                                    <img src="images/fans/athlete_pg6_05.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Henry Garcia</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-4 fan-brief">
+                                        <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <ul>
+                                                <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-4 col-xs-4">
+                                                    <img src="images/fans/athlete_pg6_07.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8 col-xs-12">
+                                                    <div class="row mbxl pdlm">
+                                                        <h3>Fan Name</h3>
+                                                        <p>Jonathan Ty</p>
+                                                     </div>
+                                                     <div class="row pdlm">
+                                                        <h3>Fan Group</h3>
+                                                        <p>The Crazy Loons</p>
+                                                     </div>
+                                                 </div>
+                                          </div>
+                                        <div class=" row msg-container">
+                                            <div class="col-md-4 col-xs-12"><p><span class="y-star"></span>= 5</p></div>
+                                            <div class="col-md-8 col-xs-12 nop"><p class="msg"><a href="#"><span class="msg-icon"></span>Message Fan</a></p></div>
+                                        </div>     
+                                    </div>
+                                </li>
+                            </ul>
+                    	</div>
+                      </div>
+                      <div class="tab-pane" id="academics">
+                      	<ul>
+                        	<li class="clearfix acd-standings">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="sub-heading-title">Academic Standings</h3>
+                                <ul class="col-md-4">
+                                	<li><span class="gray">Grade Level:</span> Senior</li>
+                                    <li><span class="gray">Graduation Date:</span> May 2014</li>
+                                    <li><span class="gray">Class Rank:</span> 203</li>
+                                </ul>
+                                <ul class="col-md-4">
+
+                                	<li><span class="gray">Your GPA:</span> 3.0</li>
+                                    <li><span class="gray">SAT Score:</span> 1800</li>
+                                    <li><span class="gray">ACT Score:</span> 25</li>
+                                </ul>
+                            </li>
+                        	<li class="clearfix">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="sub-heading-title">Academic Aspirations</h3>
+                                <p>I want to major in soccer. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod tincidunt ut laoreet 									dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>
+                                
+                            </li>
+                            <li class="clearfix acd-standings">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="sub-heading-title">What College Do You Want To Attend?</h3>
+                                <ul class="">
+                                	<li><span class="gray">1st Choice:</span> Berkeley</li>
+                                    <li><span class="gray">2nd Choice:</span> University of California</li>
+                                    <li><span class="gray">3rd Choice:</span> University of Texas</li>
+                                </ul>
+                                
+                            </li>
+                            <li class="no-border">
+                            	<h3 class="sub-heading-title mbxl">Resume
+                                <span><a href="#" class="ac-btn">Request Access</a></span></h3>
+                                <h3 class="sub-heading-title">College Transcript
+                                <span><a href="#" class="ac-btn">Request Access</a></span></h3>
+                            </li>
+                            
+                        </ul>
+                      </div>
+                    </div><div class="panel-group responsive visible-xs visible-sm" id="collapse-xyz"><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-profile">Profile</a></h4></div><div id="collapse-profile" class="panel-collapse collapse in"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-stats">Stats</a></h4></div><div id="collapse-stats" class="panel-collapse collapse"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-film">Film</a></h4></div><div id="collapse-film" class="panel-collapse collapse"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-photos">Photos</a></h4></div><div id="collapse-photos" class="panel-collapse collapse"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-forum">Forum</a></h4></div><div id="collapse-forum" class="panel-collapse collapse"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-fans">Fans</a></h4></div><div id="collapse-fans" class="panel-collapse collapse"></div></div><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#collapse-xyz" href="#collapse-academics">Academics</a></h4></div><div id="collapse-academics" class="panel-collapse collapse"></div></div></div>
+                </div>
+            </div>
+        </div>
+
+		
+        <script type="text/javascript">
+		$(document).ready(function(){
+			fakewaffle.responsiveTabs(['xs', 'sm']);	
+		})
+
+
+		$(window).load(function(){	
+			var flag = true;
+			//$( "#sendtabs" ).tabs();
+			$('.close-tip').on('click', function(){
+				$('.scout-tip').hide();	
+			})	
+			$('.award-star').on('click',function(){
+				$(this).parent().find('.award-form').show();
+			})
+			$('.close-form').on('click',function(){
+				$(this).parent().hide();
+			});	
+
+		})
+
+		</script>
+{% endblock %}

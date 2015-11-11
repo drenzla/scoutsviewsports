@@ -1,0 +1,459 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+    	<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/photos/user-pic_02.jpg" alt="Photo">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="user-ticker-container">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-7 col-xs-12">
+                        <span class="ticker-msg ticker-msg2 hide-on-device">This is your FREE Basic Athlete Profile <a href="#">See why a full profile pays off</a></span>
+                    </div>
+                    <div class="col-md-3  col-sm-5 col-xs-12 fr ticker-details">
+                        <ul class="fr">
+                            <li>
+                                <img src="images/icons/friends.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container msg-system">
+        	<div class="row">
+            	<div class="col-md-10 col-md-offset-2 ">
+                	<ul class="msg-system-filter-menu clearfix " id="filter-menu">
+                    	<li class="active"><a href="#">All <span class="msg-count">[9]</span></a></li>
+                        <li><a href="#">Athletes <span class="msg-count">[6]</span></a></li>
+                        <li><a href="#">Coaches <span class="msg-count">[3]</span></a></li>
+                        <li><a href="#">Fans <span class="msg-count">[2]</span></a></li>
+                        <li><a href="#">Scoutsview <span class="msg-count">[1]</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mtxl mail-action">
+            	<div class="col-md-10 col-md-offset-2 clearfix responsive-nav-bar">
+                	<span class="menu-bar-icon"></span><span class="msg-icon-lg"></span>
+                	<a href="#" class="btn btn-primary btn-lg active compose-btn" role="button">Compose</a>
+                    <a href="#" class="btn btn-primary btn-lg active delete-btn" role="button">Delete</a>
+                    <a href="#" class="btn green-btn  btn-primary btn-lg history-btn active" role="button">Conversation History</a>                	
+                </div>
+                <div class="dummy-div"></div>
+            </div>
+            <div class="row mtxxl">
+            	<div class="col-md-2  fl mail-collection-list-wrapper">
+                	<ul class="mail-collection-list">
+                    	<li><a href="#"><span class="inbox_icon"></span> Inbox <span class="msg-count">[3]</span></a></li>
+                        <li><a href="#"><span class="save_icon"></span> Saved <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="sent_icon"></span> Sent <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="outbox_icon"></span> Outbox <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="trash_icon"></span> Trash <span class="msg-count"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-xs-12 fl mailbox-wrapper">
+                	<ul class="mailbox">
+                    	<li class="clearfix unread">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span><span class="hidden-date fr">Jun 25</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix unread">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix unread">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="sender-name fl">
+                            	<form action="#">    
+                                    <label><input type="checkbox" name="mail[]" ></label> 
+                                </form>
+                                <span>From Name</span>
+                            </div>
+                            <div class="mail-subject fl">
+                            	<p>Subject of Email Subject of Email</p>
+                            </div>
+                            <div class="mail-date fl">
+                            	<p>Wed, July 23, 2014 4:44 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+			function customCheckbox(checkboxName){
+				var checkBox = $('input[name="'+ checkboxName +'"]');
+				$(checkBox).each(function(){
+					$(this).wrap( "<span class='custom-checkbox'></span>" );
+					if($(this).is(':checked')){
+						$(this).parent().addClass("selected");
+					}
+				});
+				$(checkBox).click(function(){
+					$(this).parent().toggleClass("selected");
+				});
+			}
+			$(document).ready(function (){
+				$("#filter-menu").slicknav({
+					prependTo:'.dummy-div',
+					label: 'Filter'
+				});
+				customCheckbox("mail[]");
+				$('.msg-icon-lg').click(function(){
+					if($(this).hasClass('close-menu')){
+						$(this).removeClass('close-menu');
+						$('.mail-collection-list').removeClass('nav_open');
+						$('.mailbox-wrapper').animate({left:0});
+					}
+					else{
+						$(this).addClass('close-menu');
+						$('.mail-collection-list').addClass('nav_open');
+						$('.mailbox-wrapper').animate({left:180});
+						$('body').css('overflow-x','hidden');
+					}
+				})
+				
+			
+			})
+			
+		</script>
+ {% endblock %}

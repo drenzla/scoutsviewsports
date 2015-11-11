@@ -1,0 +1,252 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+		<header class="header no-border">
+        	<div class="coach-bg ">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/coach-images/coach_pg2a_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Coach</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Nick Saban</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+
+
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Coach Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Star <span class="block">Athletes</span></a></li>
+                                <li class="active"><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Coach Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Prototype <span class="block">Athlete Search</span></a></li>
+                                <li><a href="#">Stats and <span class="block">Analytics</span></a></li>
+                                <li><a href="#">Coach <span class="block">Resources</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="row"><span class="ticker-msg">All posted messages between you and athlete are kept confidential</span></div>
+                        
+                    </div>
+                    <div class="col-md-4  col-sm-4 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container academic-profile-container coach-5">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-9 update-my-status">
+                        <div class="update-status details coach no-border">
+
+                        <div class="you"><img src="images/coach-images/coach_pg5b_03.png" width="58" height="58" alt="img"><span>Coach</span></div>
+                        <div class="post-status">
+                        	<span>Posted 04/20/14: &nbsp;<em class="private-post">*This post is private</em></span>
+						<p>You awarded <a hef="#">Tommy Trahan </a>you 5 Leaderboard Stars</p>
+                        <ul class="stars">
+                        	<li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            <li><a href="#"><img src="images/star.png" width="23" height="21" alt="img"></a></li>
+                            
+                        </ul>
+                        <div class="clearfix"></div>
+                        <div class="post-output">
+                            <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                <ul>
+                                    <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="you">
+                            <img src="images/you.jpg" width="58" height="58" alt="img"><span>Athlete</span>
+                            </div>
+                            <div class="posted-info">
+                            <span>Posted 06/13/13: Reply from <em><a href="#">Tommy Trahan </a></em><em class="private-post">*This post is private</em></span>
+                            <p>Thanks for the stars Coach Saban!! I would like to set a time to come by your school and visit</p>
+                            </div>
+                        </div>
+                        <div class="post-output">
+                            <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                <ul>
+                                    <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                    <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="you">
+                            <img src="images/coach-images/coach_pg5b_03.png" width="58" height="58" alt="img"><span>You</span>
+                            </div>
+                            <div class="posted-info">
+                            <span>Posted 06/13/13: Reply from <em><a href="#">You </a></em><em class="private-post">*This post is private</em></span>
+                            <p>Give our office admin a call to set up a time 987-920-0292</p>
+                            </div>
+                        </div>
+                        <div class="post-output">
+                            <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                <ul>
+                                    <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="you">
+                            <img src="images/you.jpg" width="58" height="58" alt="img"><span>Athlete</span>
+                            </div>
+                            <div class="posted-info">
+                            <span>Posted 06/13/13: Reply from <em><a href="#">Tommy Trahan </a></em><em class="private-post">*This post is private</em></span>
+                            <p>I will Coach Saban. Thanks!</p>
+                            </div>
+                        </div>
+                        <div class="fan-comment">
+                         <span><em>You</em></span>
+                         
+                         <form class="post-news">
+                            	<textarea class="comment form-control" placeholder="Lookng forward to it Tommy"></textarea>
+                                
+                         </form>
+                        
+						<div class="clearfix"></div>
+                         
+                        </div>
+                        <input type="submit" value="Post Message" class="post-msg-btn">
+                        </div>
+                        <div class="clearfix"></div>
+                        </div>
+                        
+                        </div>
+                    
+                    <div class="col-md-3 col-xs-12">
+                    	<div class="filter-discussions">
+                        <h3>Filter Discussions</h3>
+                        <span>Show New Posts Only <a href="#">View All</a></span>
+                        <h5>Search Forum</h5>
+                        <div class="search">
+                        <input type="text" placeholder="Search by Keyword" class="search-input form-control"><input type="button" value="Search" class="btn">
+                        </div>
+                        <div class="Coach-discusions discusions">
+                        <h5>Athlete Discussions</h5>
+                        <ul>
+                        	<li><a href="#">Nick Saban</a> <em>2</em></li>
+                            <li><a href="#">Coach Dan</a></li>
+                            <li><a href="#">Coach Sam</a></li>
+                            <li><a href="#">Scout Gary</a></li>
+                            <li><a href="#">Peter Mcully</a></li>
+                            <li><a href="#">Sam Johnson</a></li>
+                        </ul>
+                        <a class="view-more" href="#">View More</a>
+                        </div>
+                        <div class="fan-discusions discusions">
+                        <h5>Coach Network Forum</h5>
+                        <ul>
+                        	<li><a href="#">Mikey McCool</a></li>
+                            <li><a href="#">Tara Smith</a></li>
+                            <li><a href="#">John Johnson</a></li>
+                            <li><a href="#">Jane Parker</a></li>
+                            <li><a href="#">Peter Mcully</a></li>
+                            <li><a href="#">Elizabeth Taylor</a></li>
+                        </ul>
+                        <a class="view-more" href="#">View More</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+		
+{% endblock %}

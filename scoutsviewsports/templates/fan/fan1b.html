@@ -1,0 +1,746 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="fan-pg award-pg">  -->
+		<header class="header no-border">
+        	<div class="">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/fan-images/fan-photo_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Fan</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Mickey McCool</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Fan FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Fan Profile <span class="block">Manager</span></a></li>
+                                <li class="active"><a href="#">My Shine <span class="block">Stars</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan Group <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Photos</span></a></li>
+                                <li><a href="#">Fan <span class="block">News</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-8">
+                        <div class="row"><span class="ticker-msg">Award your favourite athlete My Shine Stars or queue them up in your Favourite tab</span></div>
+                        
+                    </div>
+                    <div class="col-md-2  col-sm-4 fr">
+                    	
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                        <div class="fr stars-available" title="My Shine Stars you have available to award">
+                        	<span class="glyphicon glyphicon-star"></span>
+                            <span class="count">78</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class=" container inner-8 inner-3">
+            <div class="row">
+            	<div class="col-md-6 pdl0">
+                	<div class="inner-8-leaderboard" id="tab1">
+                    	<p class="center"><span class="glyphicon glyphicon-star "></span>My Shine Stars</p>
+                    
+                    </div>
+                </div>
+                <div class="col-md-6 pdr0">
+                	<div class="inner-8-leaderboard" id="tab2">
+                    	<p class="center"><span class="glyphicon glyphicon-star "></span>My Favourite Athletes</p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-12" >
+                	<div class="row" id="inner-8-leader-rel">
+                    <div class="triangle-up"></div>
+                    	<div class="stars-details col-md-12">
+                        	<div class="row mbl  ">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="title pdll">Coach/Scout</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="title pdlm">School</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="title">Grade/level</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="title">Stars | Awarded</h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                            
+                                            <h3 class="title">Profiles</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip ">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Nick Saban<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Dallas HS</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class="new_icon"></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Mike Tom<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Washington HS</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">John Doe<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Austin ISD</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0 ">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Joe Horn<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Richland CC</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Mike Toms<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Fort Worth ISD</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Greg Schiano<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>University of Texas</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="green-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="center stars-awarded"><span class="count">1</span><span class="glyphicon glyphicon-plus add-star-btn plus"></span><span class="glyphicon glyphicon-minus add-star-btn minus"></span></h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0 ">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                	
+                </div>
+            </div>
+        </div>
+        	<div class="row">
+            	<div class="col-md-12" >
+                	<div class="row" id="inner-8-shine-rel">
+                    	<div class="triangle-up"></div>
+                    	<div class="stars-details col-md-12">
+                        	<div class="row  ">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="title pdll">Athlete name</h3>
+                                        </div>
+                                        <div class="col-md-6 pdlm">
+                                            <h3 class="title">School</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="title">Grade/level</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="title">Award stars</h3>
+                                        </div>
+                                        <div class="col-md-3 pdr0">
+                                            
+                                            <h3 class="title">Profiles</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip ">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Mikey McCool<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>The Crazy Loons</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <div class="confirmation-txt">
+                                                                <p>You awarded this athlete</p>
+                                                                <p class="green">10 My Shine Star</p>
+                                                            </div> 
+                                                            
+                                                        </form>
+                                                        <div class="close-form">
+                                                        	<img src="images/award-images/circle_image.png" />
+                                                        </div>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0 ">
+                                        
+                                            <h3 class="view-btn"><span class="new_icon"></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Stephanie Roberts<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>None Created</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <input type="text" placeholder="10">
+                                                            <input type="submit" value="Award"> 
+                                                        </form>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">John Candy<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>The Outsider</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                	<div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <input type="text" placeholder="10">
+                                                            <input type="submit" value="Award"> 
+                                                        </form>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Steve Johnson<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>The Crazy Loons</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <input type="text" placeholder="10">
+                                                            <input type="submit" value="Award"> 
+                                                        </form>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list strip">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Carol Weisz<span class="msg-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>None Created</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 12</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <input type="text" placeholder="10">
+                                                            <input type="submit" value="Award"> 
+                                                        </form>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fan-list">
+                            	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                    <ul>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="blu-txt">Pat Harper <span class="msg-icon-icon"></span></h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>We Love Tommy</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                            <h3 class="count-txt"><span class="yellow-star"></span>= 16</h3>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class=" row award-section">
+                                                <div class="award-star">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="">Award stars</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <div class="award-form">
+                                                        <form action="/">
+                                                            <input type="text" placeholder="10">
+                                                            <input type="submit" value="Award"> 
+                                                        </form>
+                                                        <p>
+                                                            <span class="glyphicon glyphicon-star green"></span>
+                                                            <span class="mrl">  = 1430</span>
+                                                            <span class="glyphicon glyphicon-star gold"></span>
+                                                            <span> = 1430</span>
+                                                        </p>
+                                                    </div>
+                                            </div>
+										</div>
+                                        <div class="col-md-3 pdr0">
+                                        
+                                            <h3 class="view-btn"><span class=""></span><a href="#" class=" blue view-profile">View </a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                	
+                </div>
+            </div>
+        </div>
+
+		
+        <script type="text/javascript">
+
+		$(window).load(function(){	
+			$( "#tab1" ).on('click',function(){
+				$("#inner-8-shine-rel").hide();
+				$('#inner-8-leader-rel').show();	
+			});
+			$( "#tab2" ).on('click',function(){
+				$('#inner-8-leader-rel').hide();
+				$("#inner-8-shine-rel").show();	
+			});
+			$('.close-tip').on('click',function(){
+				$('.scout-tip').hide();
+			})
+			$('.award-star').on('click',function(){
+				$('.award-star').parent().css('z-index',11);
+				$('.award-star').parent().find('.award-form').hide();
+				$(this).parent().css('z-index',12);
+				$(this).parent().find('.award-form').show();
+			})
+			$('.close-form').on('click',function(){
+				$(this).parent().hide();
+			});
+			var curval =   parseInt($('.add-star-btn').parent().find('.count').html());
+			$('.plus').on('click',function(){
+				if(curval>=0){
+					$(this).parent().find('.count').html(++curval);
+				}
+				curval = parseInt($(this).parent().find('.count').html());
+			})
+			$('.minus').on('click',function(){
+				if(curval>0){
+					$(this).parent().find('.count').html(--curval);
+				}
+				curval = parseInt($(this).parent().find('.count').html());
+			})
+		})
+		</script>
+{% endblock %}

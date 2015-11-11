@@ -1,0 +1,284 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="wrapper">
+		<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/photos/user-pic_02.jpg" alt="Photo">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li class="active"><a href="#">Athletic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">Media <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Manager</span></a></li>
+                                <li><a href="#">Academic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Stars <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Networks <span class="block">Manager</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container">
+        <!--<div class="window">
+        	<div class="news">
+            <h1>Play More Than One Sport?</h1>
+            <p>Good News. ScoutsView has plans to support multiple sports in the near future. For now, select a sport that’s the best representation of your athleticism or the sport you would like access to our recruitment efforts for this season. Or simply fill out multiple profiles for each sport that you play</p>
+            </div>
+        
+        </div>-->
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-7 col-xs-12">
+                        <span class="ticker-msg ticker-msg2"><img src="images/img02.png" class="mrs" width="31" height="24" alt="img" >Scoutsview Tip: <em>Don't inflate your stats. It may hurt your prospects later on. <a href="#">Learn More</a></em></span>
+                    </div>
+                    <div class="col-md-3  col-sm-5 col-xs-12 fr ticker-details">
+                        <ul class="fr">
+                            <li>
+                                <img src="images/icons/friends.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container academic-profile-container">
+        	<form method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="athletic-profile">
+                            <div class="choose-sport">
+                            <span class="title-sport">Step 1: Choose Your Sport <em>*Required to Publish Profile</em></span>
+                                <ul class="nav-justified mbm">
+                                    <li><input type="radio" name="radio"><span>Football</span><img src="images/football.png" width="24" height="24" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Baseball</span><img src="images/baseball.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Basketball</span><img src="images/basketball.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Soccer</span><img src="images/soccer.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Track &amp; Field</span><img src="images/track.png" width="30" height="25" alt="img"></li>
+                                    
+                                </ul>
+                                <ul class="nav-justified mbm">
+                                    <li><input type="radio" name="radio"><span>Hockey</span><img src="images/icons/sports-icon_10.png" width="24" height="24" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Softball</span><img src="images/icons/sports-icon_03.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>volleyball</span><img src="images/icons/sports-icon_05.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Golf</span><img src="images/icons/sports-icon_07.png" width="25" height="25" alt="img"></li>
+                                    <li><input type="radio" name="radio"><span>Cheerleading</span><img src="images/icons/sports-icon_13.png" width="30" height="25" alt="img"></li>
+                                 </ul>
+                                <em class="question">Do you play more than one sport?</em>
+                            </div>
+                            <!--choose sport-->
+                            <div class="about-you">
+                            <span class="title-sport">Step 2: About You</span>
+                            <div>
+                                <fieldset>
+                                    <textarea placeholder="My Personal Statement is... (500 word limit)" class="form-control"></textarea>
+                                </fieldset>
+                            </div>
+                                
+                            </div>
+                            <!--about-you end-->
+                            <div class="basic-static">
+                            <span class="title-sport">Step 3: Basic Stats <em>*Required to Publish Profile</em></span>
+                            <div class="row">
+                                <div class="basic-stats">
+                                    <div class="col-md-3 col-sm-12">
+                                        <div class="drop-info">
+                                            <div>
+                                                <select id="search_select1">
+                                                <option>Choose Position</option>
+                                                <option>Choose Position1</option>
+                                                <option>Choose Position2</option>
+                                                <option>Choose Position3</option>
+                                                </select>
+                                                    <select id="search_select2">
+                                                <option>Choose Position</option>
+                                                <option>Choose Position1</option>
+                                                <option>Choose Position2</option>
+                                                <option>Choose Position3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                    <div class="height-bench htben1">
+                                        <label>Height:</label><input type="text" placeholder="FT" class="form-control"> <input type="text" placeholder="FT" class="form-control">
+                                     
+                                        <label>Bench:</label><input type="text" placeholder="LBS" class="form-control">
+                                     </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 left-zero resize">
+                                    <div class="height-bench htben2">
+                                        <label>Your Weight:</label><input type="text" placeholder="LBS" class="form-control">
+                                        <label>Your Squats:</label><input type="text" placeholder="LBS" class="form-control">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 left-zero last">
+                                        <div class="height-bench htben3">
+                                            <label>40 Yard Dash:</label><input type="text" placeholder="SEC" class="form-control"> <input type="text" placeholder="MIL" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>	
+                                </div>
+                                
+                            </div>
+                            <!--basic-stats end-->
+    
+                            <div class="import-statistics">
+                            <span class="title-sport">Step 4: Import Full Statistics</span>
+                                <div class="statistic-database">
+                                    <span>We will need to tie in to the statistics database for all high school and athletes in the country</span>
+                                </div>	
+                            </div>
+                            <!--import-statistics end-->
+                        </div>
+                        <!--athletic-profile end-->
+                    </div>
+                </div>
+                <div class="fill-out">
+                    <a class="save-pro btn" href="#">Save Progress</a>
+                    <a class="prev-this btn" href="#">Preview This</a>
+                    <a  class="publish-page btn" href="#">Publish Page</a>
+                    <em>*You must fill out the required steps before you can publish your profile</em>
+                 </div>   
+            </form>
+        </div>
+</div>
+<!--wrapper end-->
+		
+        
+        <!--Advertise Popup Box Start-->
+   <div id="boxes" class="backgroundPopup">
+    
+            <h1>Play More Than One Sport?  <a href="#" class="close01"><img src="images/close_2.png" alt="Image"></a></h1>
+          
+           <p>Good News. ScoutsView has plans to support multiple sports in the near future. For now, select a sport that's the best representation of your athleticism or the sport you would like access to our recruitment efforts for this season. Or simply fill out multiple profiles for each sport that you play</p>
+    
+    </div>
+<!--Advertise Popup Box Start-->
+
+
+      <!--<script language="javascript" src="js/colorbox.js"></script>-->
+
+<!--Homepage Advertise Box Popup Script-->        
+
+
+        
+        
+<script type="text/javascript">
+$(window).load(function(){
+	$(".backgroundPopup").show();
+	$(".academic-profile-container").addClass("opc01");
+});
+
+</script>
+<script type="text/javascript">
+$(window).load(function(){
+	$("a.close01").click(function(){
+		$(".backgroundPopup").hide();
+		$(".academic-profile-container").removeClass("opc01");
+	});
+	
+});
+</script>
+{% endblock %}

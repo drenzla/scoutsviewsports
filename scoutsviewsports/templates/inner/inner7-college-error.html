@@ -1,0 +1,276 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/photos/user-pic_02.jpg">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Athletic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">Media <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Manager</span></a></li>
+                                <li class="active"><a href="#">Academic Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Stars <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Networks <span class="block">Manager</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-12">
+                        <div class="row"><span class="ticker-msg">This is a custom message ticker for user</span></div>
+                    </div>
+                    <div class="col-md-4  col-sm-5 col-xs-12 fr ticker-details">
+                        <ul class="fr">
+                            <li>
+                                <img src="images/icons/friends.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container academic-profile-container">
+            <div class="row">
+            	<form method="post">
+                    <div class="col-md-12">
+                        <h2>Your <span class="blue">College</span> Academic Profile [<span class="blue normal">change grade level</span>]</h2>
+                        <div class="academic-profile">
+    
+                            <fieldset class="clearfix mbm">
+                                <span class="blue fl">Academic Standing</span>
+                                <span class="fr share">
+                                    <div class="share-with dropdown academic">
+                                        <span>Share With</span>
+                                        <div class="custom-checkbox">
+                                            <input id="check1" type="checkbox" name="check" checked value="check1">
+                                            <label for="check1">Coaches</label>
+                                            <br>
+                                            <input id="check2" type="checkbox" name="check" checked value="check2">
+                                            <label for="check2">Scouts</label>
+                                            <br>
+                                            <input id="check3" type="checkbox" name="check" value="check3">
+                                            <label for="check3">Fans</label>
+                                            <br>
+                                            <input id="check4" type="checkbox" name="check" value="check4">
+                                            <label for="check4">No one</label>
+                                            <br>
+                                        </div>
+    
+                                    </div>   
+                                </span>
+                            </fieldset>
+                            <fieldset class="mbm has-error">
+                                <input type="text" placeholder="Name of College or University" class="form-control">
+                            </fieldset>
+                            <fieldset class="mbm">
+                                <span class="grade-level select-lg clearfix">
+                                    <select id="grade-select" class="fl">
+                                        <option value="share with">Grade Level</option>
+                                        <option value="share with">A</option>
+                                        <option value="share with">B</option>
+                                    </select>
+                                </span>
+                                <span class="graduation-date select-lg ">
+                                    <select id="grad-select" class="fr">
+                                        <option value="share with">Graduation Date</option>
+                                        <option value="share with">Share with</option>
+                                        <option value="share with">Share with</option>
+                                    </select>
+                                </span>
+                            </fieldset>
+                            <fieldset class="mbm clearfix ">
+                                <div class="has-error half fl"><input type="text" class="form-control" placeholder="Class Rank (Optional)"></div>
+                                <div class="has-error half fr"><input type="text" class="form-control" placeholder="Your GPA (Optional)"></div>
+                            </fieldset>
+                            <fieldset class="pdbl clearfix ">
+                                <div class="has-error half fl"><input type="text"  class="form-control" placeholder="SAT Score (Optional)"></div>
+                                <div class="has-error half fr"><input type="text"  class="form-control" placeholder="ACT Score (Optional)"></div>
+                            </fieldset>
+                            <fieldset class="pdtl mbm">
+                                <span class="blue fl">Academic Aspirations</span>
+                                <span class="fr share">
+                                    <div class="share-with dropdown aspirations">
+                                        <span>Share With</span>
+                                        <div class="custom-checkbox">
+                                            <input id="asp-coach" type="checkbox" name="check" checked value="asp-coach">
+                                            <label for="asp-coach">Coaches</label>
+                                            <br>
+                                            <input id="asp-scout" type="checkbox" name="check" checked value="asp-scout">
+                                            <label for="asp-scout">Scouts</label>
+                                            <br>
+                                            <input id="asp-fans" type="checkbox" name="check" value="asp-fans">
+                                            <label for="asp-fans">Fans</label>
+                                            <br>
+                                            <input id="asp-no-one" type="checkbox" name="check" value="asp-no-one">
+                                            <label for="asp-no-one">No one</label>
+                                            <br>
+                                        </div>
+    
+                                    </div>   
+                                </span>
+                            </fieldset>
+                            <fieldset class="mbm has-error">
+                                <input type="text" placeholder="What is your major?" class="form-control">
+                            </fieldset>
+                            <fieldset class="pdbl mbxl has-error">
+                                <textarea placeholder="Anything else you would like to add? (200 word limit)" class="form-control"></textarea>
+                            </fieldset>
+                            
+                            <fieldset class="mtl mbm upload-resume">
+                                <p class="mbm"><span class="blue">Upload Your Resume</span></p>
+                                <input id="uploadFile1" type="text" placeholder="PDF Only, 4MB Limit" disabled="disabled"  class="fl form-control" />
+                                <div class="fileUpload btn btn-primary fr">
+                                    <span>Browse</span>
+                                    <input type="file" class="upload form-control" />
+                                </div>
+                            </fieldset>
+    
+                            <fieldset class="mtl mbm upload-transcript">
+                                <p class="mbm"><span class="blue mbm">Upload Your College Transcript</span></p>
+                                <input id="uploadFile2" type="text" placeholder="PDF Only, 4MB Limit" disabled="disabled"  class="fl form-control" />
+                                <div class="fileUpload btn btn-primary fr">
+                                    <span>Browse</span>
+                                    <input type="file" class="upload form-control" />
+                                </div>
+                                <p class="alert-msg">Resumes and transcripts are not available for public download. Coaches and scouts are required to request permission from you for access through your profile page.</p>
+                            </fieldset>
+                            <div class="hide-profile-tab clearfix">
+                                <span class="fl">Do you want to hide your academic profile tab?</span>
+                                <span class="input-wrap fr">
+                                    <span class="input"><input type="radio" name="hide-profile">Yes</span>
+                                    <span class="input"><input type="radio" name="hide-profile">No</span>
+                                </span>
+                            </div>
+                            <div class="btn-wrap">
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-lg blue-btn mbm">Save Progress</button>
+                                    <button type="button" class="btn btn-primary btn-lg mhs green-btn mbm preview-btn">Preview This</button>
+                                    <button type="button" class="btn btn-primary btn-lg green-btn mbm">Publish Page</button>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+               </form>
+            </div>
+        </div>
+		<footer>
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-12">
+                    	<p class="footer-copyright-text">Copyright &copy; 2014 Scoutsview. All Rights Reserved.</p>
+                    </div>
+                 </div>
+             </div>
+        </footer>
+		
+        <script type="text/javascript">
+			$('#grade-select').selectbox();
+			$('#grad-select').selectbox();
+		</script>
+{% endblock %}

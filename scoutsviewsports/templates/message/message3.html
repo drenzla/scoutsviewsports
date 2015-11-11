@@ -1,0 +1,219 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+    	<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/photos/user-pic_02.jpg" alt="Photo">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="user-ticker-container">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-7 col-xs-12">
+                        <span class="ticker-msg ticker-msg2 hide-on-device">This is your FREE Basic Athlete Profile <a href="#">See why a full profile pays off</a></span>
+                    </div>
+                    <div class="col-md-3  col-sm-5 col-xs-12 fr ticker-details">
+                        <ul class="fr">
+                            <li>
+                                <img src="images/icons/friends.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="images/icons/fav.png" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container msg-system">
+        	<div class="row">
+            	<div class="col-md-10 col-md-offset-2" >
+                	<ul class="msg-system-filter-menu clearfix" id="filter-menu">
+                    	<li class="active"><a href="#">All <span class="msg-count">[9]</span></a></li>
+                        <li><a href="#">Athletes <span class="msg-count">[6]</span></a></li>
+                        <li><a href="#">Coaches <span class="msg-count">[3]</span></a></li>
+                        <li><a href="#">Fans <span class="msg-count">[2]</span></a></li>
+                        <li><a href="#">Scoutsview <span class="msg-count">[1]</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mtxl mail-action">
+            	<div class="col-md-10 col-md-offset-2 clearfix responsive-nav-bar">
+                	<span class="menu-bar-icon"></span><span class="msg-icon-lg"></span>
+                	<a href="#" class="btn btn-primary btn-lg active compose-btn" role="button">Compose</a>
+                    <a href="#" class="btn btn-primary btn-lg active delete-btn" role="button">Delete</a>
+                    <a href="#" class="btn green-btn  btn-primary btn-lg history-btn active" role="button">Conversation History</a>                	
+                </div>
+                <div class="dummy-div"></div>
+            </div>
+            <div class="row mtxxl">
+            	<div class="col-md-2 fl mail-collection-list-wrapper">
+                	<ul class="mail-collection-list">
+                    	<li><a href="#"><span class="inbox_icon"></span> Inbox <span class="msg-count">[3]</span></a></li>
+                        <li><a href="#"><span class="save_icon"></span> Saved <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="sent_icon"></span> Sent <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="outbox_icon"></span> Outbox <span class="msg-count"></span></a></li>
+                        <li><a href="#"><span class="trash_icon"></span> Trash <span class="msg-count"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 fl mailbox-wrapper">
+                	<div class="email-subject">
+                		<h1>Email Subject</h1>
+                    	<p>Dores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officio deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas molestias excepturi sint occaecati cupid-lute non provident, similique sunt in culpa qui officio deserunt mollitia an., id est laborum et dolorum fuga.Dores et quas molestias excepturi ant occaecati cupiditate non provident, similique sunt in culpa qui offi-cio deserunt mollitia animi, id ea laborum et dolorum fuga. </p>
+                	</div>
+                    <div class="conversation-history">
+                    	<ul class="chat-history">
+                        	<li>
+                    			<h2 class="you">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                            <li>
+                    			<h2 class="other">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                            <li>
+                    			<h2 class="you">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                            <li>
+                    			<h2 class="other">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                            <li>
+                    			<h2 class="you">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                            <li>
+                    			<h2 class="other">On Tue, Jul 22, 2014 at 3:21 PM, [Athlete Name] wrote:</h2>
+                        		<p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Dores et quas mol estias excepturi net occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                    		</li>
+                        </ul>
+                        <a href="#" class="btn green-btn  btn-primary btn-lg active close-history-btn" role="button">Close History</a>  
+                    </div>
+                    <div class="send-message">
+                    	<textarea placeholder="Reply Message..."></textarea>
+                        <a href="#" class="btn btn-primary btn-lg send-btn" role="button"><span class="sent_iconlg"> </span> Send</a>
+                        <a href="#" class="attachment"><span class="attach_icon"></span>Add Attachment</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+
+			$(document).ready(function (){
+				$("#filter-menu").slicknav({
+					prependTo:'.dummy-div',
+					label: 'Filter'
+				});
+
+				$('.msg-icon-lg').click(function(){
+					if($(this).hasClass('close-menu')){
+						$(this).removeClass('close-menu');
+						$('.mail-collection-list').removeClass('nav_open');
+						$('.mailbox-wrapper').animate({left:0});
+					}
+					else{
+						$(this).addClass('close-menu');
+						$('.mail-collection-list').addClass('nav_open');
+						$('.mailbox-wrapper').animate({left:180});
+						$('body').css('overflow-x','hidden');
+					}
+				})
+				
+			
+			})
+			
+		</script>
+{% endblock %}

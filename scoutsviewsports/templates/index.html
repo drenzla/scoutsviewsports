@@ -1,0 +1,614 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<header class="header home">
+        	<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="{% static 'images/logo.jpg' %}" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="athlete_home/" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="inner2/">Middle School</a></li>
+                                    <li><a href="inner2/">High School</a></li>
+                                    <li><a href="inner2/">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="athlete_home/" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="coach_home/">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="login-wrapper ">
+                    <div class="btn btn-primary" ><a href="#"><span class="lock_icon">Sign in</span></a></div>
+                    <div class="social-media-login ">
+                        <div class="triangle-up blue"></div>
+                        <div class="fb-login mbm">
+                            <a href="#"><img src="{% static 'images/fb_btn.jpg' %}" alt="Faceboook login" /></a>
+                        </div>
+                        <div class="fb-login">
+                            <a href="#"><img src="{% static 'images/Twitter_btn.jpg' %}" alt="Faceboook login" /></a>
+                        </div>
+                    </div>
+                </div>
+                	</div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+        	<div id="carousel-example-generic" class="carousel  carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+              <div class="item active banner-1">
+                  <img class="img-responsive" src="{% static 'images/banner5.jpg' %}" alt="Banner" />
+                  <div class="register-form-container">
+                        <div class="banner-text">
+                        	<h2>The <span class="blue">Premier Social Connection</span> For Athletes, Coaches, Scouts & Fans</h2>
+                      </div>
+                   </div>
+                  
+                </div>
+                <div class="item ">
+                  <img class="img-responsive" src="{% static 'images/banner4.jpg' %}" alt="Banner" />
+                  <div class="register-form-container">
+                  		<div class="banner-text">
+                        	<h2>Lorem <span>Ipsum Dolor Sit Amet,</span> Consectetuer, Adipiscing, Elit Sed Diam</h2>
+                       </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img class="img-responsive" src="{% static 'images/banner3.jpg' %}" alt="Banner" />
+                  <div class="register-form-container">
+                  		<div class="banner-text">
+                        	<h2>Lorem <span>Ipsum Dolor Sit Amet,</span> Consectetuer, Adipiscing, Elit Sed Diam</h2>
+                       </div>
+                  </div>
+                  
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="{% static 'images/banner2.jpg' %}" alt="Banner" />
+                  <div class="register-form-container">
+                  		<div class="banner-text">
+                            <h2>Lorem <span>Ipsum Dolor Sit Amet,</span> Consectetuer, Adipiscing, Elit Sed Diam</h2>
+                        </div>
+                  </div>
+                  
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="{% static 'images/banner1.jpg' %}" alt="Banner" />
+                  <div class="register-form-container">
+                  			<div class="banner-text">
+                                <h2>Lorem <span>Ipsum Dolor Sit Amet,</span> Consectetuer, Adipiscing, Elit Sed Diam</h2>
+                           </div>
+                  </div>
+                  
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="register-form-container">
+            	 <div class="create-profile">
+                    <h3>CREATE YOUR <span class="block">FREE PROFILE</span></h3>
+                    <form name="profile" action="" method="post" class="text-center">
+                        <input type="text" name="name" class="block mbm" placeholder="Name">
+                        <input type="email" name="email" autocomplete="off" class="block mbm" placeholder="Email">
+                        <span class="select-span">I am: </span>
+                        <span class="iam fr">
+                            <select id="select1" >
+                                <option value="An Athlete">An Athlete</option>
+                                <option value="A Coach">A Coach</option>
+                                <option value="A Scout">A Scout</option>
+                                <option value="A Parent/Fan">A Parent/Fan</option>
+                            </select>
+                        </span>
+                        <button type="submit" class="btn btn-primary block">Hook Me Up!</button>
+                    </form>
+                </div>
+            </div>
+           
+            
+        </div>
+        <div class="main-content container">
+        	<div class="row featured-col-1">
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/hand_icon.jpg' %}" alt="NCAA-Approved" />
+                    <h4>NCAA-Approved</h4>
+                    <p>Scoutsview is a trusted partner and 100% compliant with all NCAA recruiting rules.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/7th.jpg' %}" alt="7th Grade and up" />
+                    <h4>7th Grade & Up</h4>
+                    <p>Male and female student-athletesfrom all major sports from high school to college level.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/scholarship_icon.jpg' %}" alt="Scholarships" />
+                    <h4>More Scholarships</h4>
+                    <p>Greater access to more athletic scholarships from all 1,000 NCAA member institutions.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/exposure_icon.jpg' %}" alt="Increased Exposure" />
+                    <h4>Increased Exposure</h4>
+                    <p>Now student-athletes from ALL sports and divisions can attract the attention of any coach or scout.</p>
+                </div>
+            </div>
+            <div class="row featured-col-2">
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/refresh_icon.jpg' %}" alt="Better matching" />
+                    <h4>Better Matching</h4>
+                    <p>Communicating directly with scouts and coaches enables better matching of athlete and athletic program.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/stats_icon.jpg' %}" alt="Incredible Analytics" />
+                    <h4>Incredible Analytics</h4>
+                    <p>Our Biometric Video Analytics enables athletes to quickly show off their basic fundamentals to scouts.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/communication_icon.jpg' %}" alt="Direct Communication" />
+                    <h4>Direct Communication</h4>
+                    <p>Student Athletes can reach out to coaches in accordance with NCAA rules in order to promote themselves.</p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 features">
+                	<img src="{% static 'images/network_icon.jpg' %}" alt="Coach/Scout Network" />
+                    <h4>Coach/Scout Network</h4>
+                    <p>Build a group of colleagues, share information and network with peers from around the nation.</p>
+                </div>
+            </div>
+          	<div class="row" id="tabs">
+            	<ul>
+                	<li class="fl">
+                    	<a href="#leaderboard-rel">
+                	<button type="button" class="btn btn-primary fl blue-btn" data-toggle="button"><span class="glyphicon glyphicon-star"></span>Top 10 Leaderboard Stars</button>
+                		</a>
+                     </li>
+                	 <li class="fl">
+                     	<a href="#shine-rel">
+                	<button type="button" class="btn btn-primary fr green-btn" data-toggle="button"><span class="glyphicon glyphicon-star"></span>Top 10 My Shine Stars</button>
+                		</a>
+                	</li>
+                </ul>
+                <div class="col-md-12 col-xs-12" id="leaderboard-rel">
+                	<div class="clearfix scout-tip">
+                        <div class="close-tip"></div>
+                        <div class="col-md-12">
+                            <div class="row">
+                            	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle-up"></div>
+                	<div class="row nop nom">
+                        <div class="col-md-6 nop border-right-grey">
+                            <ul>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/samantha.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>1. Samantha Morley (Golf)</h4>
+                                            <p>Leaderboard Stars: 1200</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                             	<li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/cameron.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>2. Cameron Harper (Baseball)</h4>
+                                            <p>Leaderboard Stars: 1100</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/Diego_sanchez.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>3. Diego Sanchez (Baseball)</h4>
+                                            <p>Leaderboard Stars: 1000</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/bray_johnson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>4. Bryan Johnson (Basketball)</h4>
+                                            <p>Leaderboard Stars: 900</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/debra_parker.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>5. Debra Parker (Soccer)</h4>
+                                            <p>Leaderboard Stars: 800</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 nop">
+                            <ul>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/samantha.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>6. Sam Grisly (Tennis)</h4>
+                                            <p>Leaderboard Stars: 780</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/catheriene_wentz.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>7. Catheriene  Wentz (Basketball)</h4>
+                                            <p>Leaderboard Stars: 750</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/juan_carlos.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>8. Juan Carlos (Basketball)</h4>
+                                            <p>Leaderboard Stars: 700</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/jemma_johnson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>9. Jenna Johnson (Basketball)</h4>
+                                            <p>Leaderboard Stars: 1200</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/cole_hanson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>10. Cole Hanson (Soccer)</h4>
+                                            <p>Leaderboard Stars: 650</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- filter list -->
+                    <div class="">
+                        <div class="col-md-6 filter-by-gender">
+                            <a href="#leaderboard-exp">
+                                <button type="button" class="btn btn-primary fl">What are Leaderboard Stars?</button>
+                            </a>
+                            <span class="filter-select fl">
+                                <select id="select3">
+                                    <option value="">Filter By Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="col-md-6 filter-by-sport">
+	                        <span class="filter-select fl mrm">
+                                <select id="select4">
+                                    <option value="">Filter By Grade</option>
+                                    <option value="male">Middle School</option>
+                                    <option value="female">High School</option>
+                                    <option value="female">College</option>
+                                </select>
+                            </span>
+                            <span class="filter-select fl">
+                                <select id="select5">
+                                    <option value="">Filter By Sport</option>
+                                    <option value="male">Football</option>
+                                    <option value="female">Baseball</option>
+                                    <option value="female">Basketball</option>
+                                    <option value="female">Soccer</option>
+                                    <option value="female">Track & Field</option>
+                                </select>
+                             </span>
+                            <a href="#">
+                                <button type="button" class="btn btn-primary fr">Show Me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12" id="shine-rel">
+                	<div class="clearfix scout-tip">
+                        <div class="close-tip"></div>
+                        <div class="col-md-12">
+                            <div class="row">
+                            	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle-up"></div>
+                    <div class="">
+                        <div class="col-md-6 nop border-right-grey">
+                            <ul>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/samantha.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>1. Samantha Morley (Golf)</h4>
+                                            <p>Leaderboard Stars: 1200</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                             	<li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/cameron.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>2. Cameron Harper (Baseball)</h4>
+                                            <p>Leaderboard Stars: 1100</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/Diego_sanchez.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>3. Diego Sanchez (Baseball)</h4>
+                                            <p>Leaderboard Stars: 1000</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/bray_johnson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>4. Bryan Johnson (Basketball)</h4>
+                                            <p>Leaderboard Stars: 900</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/debra_parker.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>5. Debra Parker (Soccer)</h4>
+                                            <p>Leaderboard Stars: 800</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 nop">
+                           <ul>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/samantha.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>6. Sam Grisly (Tennis)</h4>
+                                            <p>Leaderboard Stars: 780</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/catheriene_wentz.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>7. Catheriene  Wentz (Basketball)</h4>
+                                            <p>Leaderboard Stars: 750</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/juan_carlos.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>8. Juan Carlos (Basketball)</h4>
+                                            <p>Leaderboard Stars: 700</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/jemma_johnson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>9. Jenna Johnson (Basketball)</h4>
+                                            <p>Leaderboard Stars: 1200</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user clearfix">
+                                        <img src="{% static 'images/cole_hanson.jpg' %}" alt="Samantha"  class="fl"/>
+                                        <div class="user-details fl">
+                                            <h4>10. Cole Hanson (Soccer)</h4>
+                                            <p>Leaderboard Stars: 650</p>
+                                        </div>
+                                        <a href="#" class="fr view-profile">View Profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="col-md-6 filter-by-gender">
+                            <a href="#shine-exp">
+                                <button type="button" class="btn btn-primary shinebtn fl">What are My Shine Stars?</button>
+                            </a>
+                            <span class="filter-select fl">
+                                <select id="select6">
+                                    <option value="">Filter By Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="col-md-6 filter-by-sport">
+	                        <span class="filter-select fl mrm">
+                                <select id="select7">
+                                    <option value="">Filter By Grade</option>
+                                    <option value="male">Middle School</option>
+                                    <option value="female">High School</option>
+                                    <option value="female">College</option>
+                                </select>
+                             </span>
+                             <span class="filter-select fl ">
+                                <select id="select8">
+                                    <option value="">Filter By Sport</option>
+                                    <option value="male">Football</option>
+                                    <option value="female">Baseball</option>
+                                    <option value="female">Basketball</option>
+                                    <option value="female">Soccer</option>
+                                    <option value="female">Track & Field</option>
+                                </select>
+                            </span>
+                            <a href="#">
+                                <button type="button" class="btn btn-primary fr">Show Me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <footer class="footer">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-8">
+                    	<div class="col-xs-12 col-sm-4 col-md-4">
+	                        <div class="row">
+                                <p class="title">ABOUT SCOUTSVIEW</p>
+                                <ul>
+                                    <li><a href="#">What We Do</a></li>
+                                    <li><a href="#">Meet The Team</a></li>
+                                    <li><a href="#">Why We're Different</a></li>
+                                    <li><a href="#">Partner With Us</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+	                        <div class="row">
+                                <p class="title">GENERAL RESOURCES</p>
+                                <ul>
+                                    <li><a href="#">Campus Tours</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Parents</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Our Partners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        	<div class="row">
+                                <p class="title">MEDIA CENTER</p>
+                                <ul>
+                                    <li><a href="#">Press Room</a></li>
+                                    <li><a href="#">Video Library</a></li>
+                                    <li><a href="#">Photo Gallery</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Investors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 subscribe">
+                    	<p>WANT TO RECEIVE OUR UPDATES?</p>
+                        <form name="" action="" method="post">
+                        	<input type="email" placeholder="Your Email">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <p>FOLLOW US</p>
+                        <ul class="social-links">
+                        	<li><a href="#"><img src="{% static 'images/fb_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/googleplus_icon.jpg' %}" alt="Google +" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/insta_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/linkedin_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/pintrest_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/twitter_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/twitter1_icon.jpg' %}" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/youtube_icon.jpg' %}" alt="Facebook" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-md-12">
+                    	<ul class="copyright-text">
+                        	<li><span class="copyright">Copyright &copy; 2014 Scoutsview. All Rights Reserved.</span></li>
+                            <li><a href="#"> Privacy Policy<span class="pipe">|</span></a></li>
+                            <li><a href="#">Terms of Use</a><span class="pipe">|</span></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$( "#tabs" ).tabs({ 
+				collapsible: true,
+				active:false
+			});
+			$('.login-wrapper').on('click',function(){
+				$('.social-media-login').toggle();
+			})
+			$('.close-tip').on('click', function(){
+				$('.scout-tip').hide();
+			})		
+			$("a[href='#leaderboard-exp']").click(function(){
+				$('#leaderboard-rel').find('.scout-tip').show();
+			})
+			$("a[href='#shine-exp']").click(function(){
+				$('#shine-rel').find('.scout-tip').show();
+			})
+			})
+			
+		</script>
+{% endblock %}     

@@ -1,0 +1,1839 @@
+@charset "utf-8";
+/* CSS Document */
+.mtm{
+	margin-top: 10px;
+}
+.mtxxl{
+	margin-top: 25px;
+}
+.pdlxxl {
+	padding-left: 25px;
+}
+input{
+	border-radius: 0;
+}
+.header .dropdown{
+	z-index: 9999;
+}
+.main-content .features {
+	min-height: 250px;
+	padding-bottom: 10px;
+}
+/* --------------------------------Styles for select box--------------------------------------*/
+.create-profile select {
+	width: 100%;
+	border: 0;
+	height: 49px;
+}
+
+.filter-by-gender select, .filter-by-sport select{
+	width: 100%;
+	height: 48px;
+	border: 0;
+}
+.filter-by-gender option:first-child, .filter-by-sport option:first-child,.academic-profile option:first-child,.search-page option:first-child, #notifications{
+	display: none;
+}
+.basic-static select{
+	width: 226px;
+	height: 37px;
+	margin-bottom: 10px;
+}
+.academic-profile select{
+	width: 100%;
+	height: 46px;
+	padding-left: 15px;
+}
+.search-page select{
+	width: 100%;
+	height: 49px;
+	padding-left: 15px;
+}
+/* --------------------------------End Of Styles for select box--------------------------------------*/
+.gold{
+	color: #fdc100 !important;
+}
+.award-pg .green{
+	color: #45a925 !important;
+}
+.mrl{
+	margin-right: 15px;
+}
+.acc-set #benefits table {
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0 0 11px 0;
+        width: 100%;
+		border: 1px solid #a4a4a4;
+}
+.acc-set #benefits table tr{
+	border-bottom: 1px solid #a4a4a4;
+}
+.acc-set #benefits table .white{
+	color: #fff;
+}
+.acc-set #benefits table tr .white-txt{
+	font-size: 10px;
+	color: #fff;
+}
+.acc-set #benefits table tr td{
+	padding: 10px 12px 5px;
+	font-size: 15px;
+	font-family: OpenSans-Bold;
+}
+.acc-set #benefits table tr th{
+	padding: 10px 17px 10px;
+	vertical-align: bottom;
+}
+.acc-set .upgrade{
+	background: #1a75a1;
+	padding: 6px 6px;
+	border-radius: 6px;
+	display: inline-block;
+}
+.acc-set{
+	max-width: 880px;
+	margin: 0 auto;
+}
+.acc-set #benefits .basic label{
+	color:#62a466;
+	width: 100%;
+	height: 100%;
+	
+}
+.acc-set #benefits .bronze label{
+	color: #ae9658;
+	width: 100%;
+	height: 100%;
+}
+.acc-set #benefits .silver label{
+	color: #b0b0b0;
+	width: 100%;
+	height: 100%;
+}
+.acc-set #benefits .gold label{
+	color: #d2c859;
+	width: 100%;
+	height: 100%;
+}
+.acc-set #benefits input[type=checkbox]:checked + label {
+background: url(../images/award-images/check.png) no-repeat center center;
+text-indent: -9999px;
+height: 100%;
+width: 100%;
+}
+.acc-set .settings-menu-list {
+	list-style: none;
+	border-bottom: 5px solid #1e3e67;
+	border-top: 5px solid #1e3e67;
+	padding: 20px;
+}
+.acc-set .settings-menu-list li a{
+	color: #1e3e67;
+}
+.acc-set .settings-menu-list li.active a{
+	font-weight: bold;
+}
+.acc-set h3{
+	color: #2288b3;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.acc-set .notifications{
+	
+}
+.acc-set .tab-content{
+
+}
+.acc-set .stars-available,.acc-set .shine-stars-available{
+	margin-top: 20px;
+	border-radius: 6px 6px 0 0;
+	padding: 10px;
+}
+.acc-set .star-txt{
+	color: #2288b3;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	padding: 0 5px;
+}
+.acc-set .stars-available p,.acc-set .shine-stars-available p{
+	color: #fff;
+	font-size: 18px;
+	line-height: 20px;
+}
+.acc-set .stars-available.coach{
+		background: #00759b;
+		border-radius: 6px;
+}
+.acc-set .stars-available.coach .count{
+	color: #4fa400;
+}
+.acc-set .stars-available .glyphicon-star,.acc-set .shine-stars-available .glyphicon-star {
+	margin-right: 7px;
+	margin-top: 13px;
+	font-size: 53px;
+	color: #4fa400;
+}
+.acc-set .shine-stars-available{
+	background: #4fa400;
+}
+.acc-set .shine-stars-available:hover{
+	background: #367c33;
+}
+.acc-set #confirms .confirmation-details{
+	font-size: 20px;
+	margin: 35px 0;
+}
+.acc-set #confirms .confirmation-details p{
+	margin-bottom: 10px;
+}
+.acc-set #confirms .purchase-history p{
+	font-size: 17px;
+	color: #707070;
+	margin-bottom: 8px;
+}
+.acc-set #confirms .custom-pagination {
+	margin-top: 20px;
+}
+.acc-set #confirms .custom-pagination ul li{
+	float: left;
+	color: #2288b3;
+}
+.acc-set #confirms .custom-pagination ul li span.pipe {
+	display: inline-block;
+	padding: 0 8px;
+}
+.acc-set #acc-info label,.acc-set #payment-methods label, .acc-set #notifications .email-notification label{
+	padding: 10px;
+	text-align: right;
+	color: #2288b3;
+	float: left;
+	width: 27%;
+	border: 1px solid #a4a4a4;
+}
+.acc-set #acc-info input[type="radio"]{
+	display: none;
+}
+.acc-set .sch-level{
+	color: #2288b3;
+	float: left;
+	width: 27%;
+	vertical-align: top;
+	border: 1px solid #a4a4a4;
+	height: 38px;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 8px
+}
+.acc-set #acc-info .schlevelbtn{
+	width: 23.3% !important;
+	text-align: center !important;
+	color: #707070;
+	border-left: 0;
+	margin-bottom: 0;
+}
+.acc-set #acc-info input[type=radio]:checked + label{  
+	background: #f2f2f2;
+} 
+.acc-set fieldset{
+	margin-bottom: 10px;
+}
+.acc-set #acc-info input, .acc-set #acc-info .calendar-container,.acc-set #payment-methods input, .acc-set #notifications .email-notification input{
+	height: 38px;
+	line-height: 25px;
+	border: 1px solid #a4a4a4;
+	width: 70%;
+	border-left: 0;
+	padding: 0 15px;
+}
+.acc-set .calendar-container{
+	margin-left: 27%;
+	position: relative;
+}
+.acc-set .calendar-container .glyphicon {
+	margin-right: 0;
+	position: absolute;
+	left: 53%;
+	top: 10px;
+}
+.acc-set .nav-tabs>li.active>a,.acc-set .nav-tabs>li.active>a:hover,.acc-set .nav-tabs>li.active>a:focus{
+	border: 0;
+}
+.acc-set .nav-tabs>li{
+	float: none;
+}
+.acc-set h1 {
+	color: #fff;
+	background: #253c63;
+	padding: 15px 0 15px 33px;
+	font-size: 26px;
+	font-family: 'OpenSans-Regular';
+	border-radius: 10px 10px 0 0;
+}
+.acc-set h1 a {
+	float: right;
+	margin-right: 10px;
+}
+.acc-set #acc-info .savebtn{
+	width: 155px;
+	border-radius: 6px;
+	background: #00759b;
+	color: #fff;
+}
+.acc-set #acc-info .savebtn:hover{
+	background: #004268;
+}
+.acc-set #acc-info .calendar-container input{
+	width: 54%;
+	border: 0;
+	line-height: 35px;
+	height: 34px;
+	padding: 0;
+}
+.acc-set .additional-stars{
+	background: #1e3e67;
+	padding: 10px;
+	border-radius: 0 0 6px 6px;
+}
+.acc-set .additional-stars p a{
+	color: #fff;
+}
+.acc-set #benefits .benefits-head{
+	background: #1d3c68;
+	padding: 15px 0;
+	color:#fff;
+}
+.acc-set #benefits .benefits-head > div{
+	color: #fff;
+}
+.acc-set #benefits .basic{
+	background: #62a466;
+	text-align: center;
+	color: #fff;
+}
+.acc-set #benefits .bronze{
+	background: #ae9658;
+	text-align: center;
+	color: #fff;
+}
+.acc-set #benefits .silver{
+	background: #b0b0b0;
+	text-align: center;
+	color: #fff;
+}
+.acc-set #benefits .gold{
+	background: #d2c859;
+	text-align: center;
+	color: #fff !important;
+}
+/*-------------------------profile settimg tabs style----------------------------*/
+.acc-set #profile-settings{
+	display: none;
+}
+.acc-set #profile-settings .prof-title, #profile-settings .prof-stat, #profile-settings .prof-radio{
+	display: inline-block;
+}
+.acc-set #profile-settings .prof-title{
+	width: 16%;
+	color: #2288b3;
+	padding-left: 28px;
+}
+.acc-set #profile-settings .prof-stat{
+	width: 52%;
+	color:#55cf50;
+}
+.acc-set #profile-settings .prof-radio{
+	width: 30%;
+}
+.acc-set #profile-settings fieldset{
+	border-bottom: 1px solid #a4a4a4;
+	padding-bottom: 10px;
+	position: relative;
+}
+.acc-set #profile-settings .edit_section {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+.acc-set  #payment-methods .edit_section {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: none;
+}
+.acc-set #privacy-settings{
+	display: none;
+}
+.acc-set #privacy-settings fieldset{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #a4a4a4;
+}
+.acc-set #privacy-settings p{
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.acc-set #privacy-settings .field{
+	width: 20%;
+	float: left;
+}
+#payment-methods, #benefits, #buy-shine-stars{
+	display: none;
+}
+.acc-set  #payment-methods .card-details:hover > .edit_section {
+	display: block;
+}
+.acc-set #profile-settings fieldset:hover > .edit_section,.acc-set .card-details:hover > .edit_section{
+	display: block;
+}
+.visa-icon{
+	background: url(../images/award-images/visa_icon.png) no-repeat;
+	width: 34px;
+	height: 21px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.acc-set .card-details{
+	position: relative;
+	max-width: 420px;
+	padding-bottom: 20px;
+}
+.acc-set .card-details h4{
+	color: #2288b3;
+}
+.acc-set .card-details .name-on-card h4, .acc-set .card-details .billing-address h4{
+	color: #4fa400;
+	margin-bottom: 5px
+}
+.acc-set .card-details .name-on-card p, .acc-set .card-details .billing-address p{
+	color: #707070;
+	line-height: 25px;
+}
+.acc-set .card-details .name-on-card, .acc-set .card-details .billing-address{
+	width: 49%;
+}
+
+.acc-set .edit_delete {
+	background: url(../images/icons/edit_sprite.png) no-repeat;
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+}
+.edit_section .edit a{
+	background-position: 0 0
+}
+.edit_section .delete a{
+	background-position: 0 -24px;
+}
+.acc-set #profile-settings .edit_section .edit a {
+background-position: 0 0;
+display: block;
+}
+.acc-set #profile-settings .savebtn{
+	width: 155px;
+	border-radius: 6px;
+	border:0;
+	background: #00759b;
+	color: #fff;
+	height: 38px;
+	line-height: 38px;
+}
+.acc-set #buy-shine-stars table{
+width: 100%;
+border: 1px solid #a4a4a4;
+}
+.acc-set #buy-shine-stars table tr{
+	border: 1px solid #a4a4a4;
+}
+.acc-set #buy-shine-stars table tr td{
+	padding: 10px 14px;
+	max-width: 315px;
+}
+.acc-set #review table{
+	width: 100%;
+}
+.acc-set #review table tbody{
+	border: 2px solid #a4a4a4;
+}
+.acc-set #review  td.right{
+	text-align: right;
+}
+.acc-set #review  .green-txt{
+	color: #4fa400;
+	font-family: OpenSans-Bold;
+	text-transform: uppercase;
+}
+.acc-set #review .glyphicon-star{
+	font-size: 33px;
+	vertical-align: middle;
+}
+.acc-set #review  .black-txt{
+	color: #000;
+	font-family: OpenSans-Bold;
+}
+.acc-set #review table tr td,.acc-set #review table thead th{
+	padding: 10px 14px;
+}
+.acc-set #review table tr td{
+	border-bottom: 2px solid #a4a4a4;
+}
+.acc-set #buy-shine-stars .green-txt,.acc-set #notifications .green-txt{
+	color: #51a400;
+}
+.acc-set #buy-shine-stars .right{
+	text-align: right;
+}
+.acc-set #buy-shine-stars .cart-btn{
+	border-radius: 6px;
+	border:0;
+	background: #fdc100;
+	color: #fff;
+	padding: 10px 15px;
+	display: inline-block;
+	text-align: center;
+}
+.acc-set #buy-shine-stars .custom-input{
+	width: 14%;
+	padding: 0px 10px;
+	margin: 0 5px;
+	line-height: 24px;
+}
+.acc-btn{
+width: 155px;
+border-radius: 6px;
+background: #00759b;
+color: #fff;
+padding: 10px 12px;
+display: inline-block;
+}
+.acc-btn:hover{
+	background: #004268;
+	color: #fff;
+}
+.acc-set .security-code{
+	position: relative;
+}
+.acc-set #payment-methods .security-code input{
+	width: 45%;
+}
+.acc-set #payment-methods .security-code label{
+	width: 52%;
+}
+.acc-set #payment-methods .expiration input{
+	width: 60%;
+}
+.acc-set #payment-methods .expiration label{
+	width: 34%;
+}
+.acc-set #payment-methods form{
+	padding-bottom: 30px;
+	border-bottom: 2px solid #a4a4a4;
+	margin-bottom: 20px;
+}
+.acc-set .add-apt {
+	position: absolute;
+	right: 30px;
+	top: 0;
+	display: block;
+	border-left: 1px solid #a4a4a4;
+	height: 100%;
+	padding-top: 6px;
+	padding-left: 16px;
+	font-size: 27px;
+}
+/*------------------Common Styles for Coach Pages-----------------------------------------*/
+.coach-pg .header-tab-container ul.header-tab li a {
+	padding: 15px 27px 10px;
+}
+.reports_icon{
+	background: url(../images/coach-images/coach_pg8_06.png) no-repeat 23% center;
+	display: inline-block;
+/*	width: 44px;
+	height: 50px;*/
+	vertical-align: middle;
+}
+.analytics_icon{
+	background: url(../images/coach-images/coach_pg8_08.png) no-repeat 23% center;
+	display: inline-block;
+/*	width: 44px;
+	height: 48px;*/
+	vertical-align: middle;
+}
+.qvidieo_icon{
+	background: url(../images/coach-images/coach_pg8_03.png) no-repeat 15% center;
+	display: inline-block;
+/*	width: 53px;
+	height: 44px;*/
+	vertical-align: middle;
+}
+.analytics_btn{
+	background: #1974a1;
+	height: 105px;
+	color: #fff;
+	line-height: 105px;
+	border-radius: 6px;
+	font-size: 28px;
+}
+.analytics_btn:hover{
+	background: #00416E;
+}
+.analytics_btn p{
+	width: 100%;
+	line-height: 30px;
+	padding-left: 44px;
+}
+/*-------------------------------------Styles for coach inner1 page-----------------------------*/
+.coach-pg .user-ticker-container .ticker-msg{
+	margin-top: 0;
+}
+.coach-pg li.ticker-freinds img {
+	top: 0px;
+}
+.border-left{
+	border-left: 1px solid #a4a4a4 !important;
+}
+.inner-1.coach-1 .street-add input {
+	padding: 8px 15px 8px 62px;
+}
+.coach-1 .radiobutton1-label {
+	border: 1px solid #a4a4a4;
+	padding: 14px 11px;
+	border-left: 0;
+	width: 181px;
+}
+.inner-1.coach-1 .light-blue {
+	color: #5ebab5;
+}
+
+.inner-1.fan-1 .light-gray {
+	color: #bdb8a5;
+}
+.inner-2 .basic-profile h3{
+	line-height: 23px;
+}
+.fan-pg .user-ticker-container .ticker-msg a{
+	margin-left: 0;
+}
+/*-------------------------------------Styles for coach inner2 page-----------------------------*/
+.header .coach-bg {
+width: 100%;
+background: url(../images/coach-images/light_blue_02.png) repeat-x;
+}
+.coach-pg .logged-in{
+	background: #5db9b4;
+}
+.coach-pg .inner-2 .basic-profile {
+	text-align: center;
+	background: #5db9b4;
+}
+.coach-pg .inner-2 .basic-profile:hover {
+background: #2A8681;
+}
+.coach-pg .inner-2 .basic-profile h3{
+	color: #fff;
+	line-height: 24px;
+}
+.coach-pg .ticker-freinds{
+	position: relative;
+}
+.coach-pg .ticker-freinds .msg-count,.fan-pg .ticker-freinds .msg-count{
+	position: absolute;
+	right: -6px;
+	top: -4px;
+	background: #bd291b;
+	color: #fff;
+	width: 15px;
+	height: 15px;
+	font-size: 10px;
+	line-height: 15px;
+	vertical-align: middle;
+	z-index: 4;
+	border-radius: 50%;
+}
+/*----------------------------------Styles for coach inner3-------------------------------------*/
+.coach-pg .athletic-profile .about-you {
+	padding: 20px 28px;
+	border: 0;
+}
+.coach-pg .inner-3 .athletic-profile{
+	border: 1px solid #ccc;
+}
+
+/*-------------------------------Styles for coach inner5-----------------------------------------*/
+.coach-pg .header-tab-container ul.header-tab li.active,.coach-pg .header-tab-container ul.header-tab li:hover {
+	background: #5db9b4;
+}
+.coach-pg .header-tab-container ul.header-tab li.active a,.coach-pg .header-tab-container ul.header-tab li a:hover {
+	color: #fff;
+}
+.coach-pg .user-ticker-container .ticker-msg {
+	font-size: 20px;
+}
+.coach-pg .post-msg-btn,.fan-pg .post-msg-btn{
+	background: #448eb3;
+	border: 0;
+	width: 233px;
+	height: 54px;
+	color: #fff;
+	border-radius: 6px;
+	margin-top: 10px;
+	font-size: 24px;
+}
+.coach-5 .edit_section{
+	display: none;
+}
+.coach-5 .post-output:hover > .edit_section{
+	display: block;
+}
+.inner-6 .mynetworks {
+	background: url(../images/coach-images/network_03.png) no-repeat;
+	width: 53px;
+	height: 52px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+/*------------------------------Styles for coach inner-7------------------------------*/
+.coach-pg .academic-profile-container p.coach-msg{
+	font-size: 30px;
+	color: #d02617;
+	line-height: 48px;
+}
+/*------------------------------Styles for coach inner-9------------------------------*/
+.coach-9 h3{
+	color: #1a75a2;
+	font-size: 28px;
+	font-family: OpenSans-bold;
+}
+.coach-9 h4{
+	color: #838383;
+	line-height: 23px;
+	font-family: OpenSans-Semibold;
+}
+.coach-9 h4.hilite{
+	color: #243b65;
+}
+.coach-9 p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #838383;
+}
+.coach-9 .filter-discussions h3{
+	font-size: 20px;
+	line-height: 23px;
+	border-bottom: 0;
+	padding-bottom: 5px;
+}
+.coach-9 .filter-discussions a.active{
+	color: #15759e;
+}
+.coach-pg .inner-3 .scout-tip{
+	margin-bottom: 15px;
+}
+/*-------------------------------Styles for coach inner-11------------------*/
+.coach-pg .inner-11 .profile-details .edit_section{
+	top: 0;
+}
+.coach-pg .inner-11 .profile-details:hover  .edit_section{
+	display: block;
+}
+.coach-pg .inner-11 #stats,.coach-pg .inner-11 #film,.coach-pg .inner-11 #photos,.coach-pg .inner-11 #academics,.coach-pg .inner-11 #fans,.coach-pg .inner-11 #profile,.coach-pg .inner-11 #forum {
+	background: #ebf5f4;
+}
+.coach-pg .inner-11 .nav-tabs>li.active>a,.coach-pg .inner-11  .nav-tabs>li.active>a:hover,.coach-pg .inner-11  .nav-tabs>li.active>a:focus{
+	background: #ebf5f4;
+	color: #15759e;
+}
+.coach-pg .inner-11 #stats p{
+	font-size: 20px;
+	color: #717171;
+	line-height: 30px;
+}
+
+
+/*---------------------Styles for fan pages----------------------------*/
+.user-ticker-container li.ticker-freinds {
+	position: relative;
+}
+.fan-pg .header-tab-container ul.header-tab li.active,.fan-pg .header-tab-container ul.header-tab li:hover {
+	background: #e4e0d4;
+}
+.fan-pg .header-tab-container ul.header-tab li a {
+	padding: 15px 32px 10px;
+}
+.fan-pg .user-ticker-container .ticker-msg{
+	margin-top: 0;
+}
+.fan-pg li.ticker-freinds img {
+	top: 0px;
+}
+.fan-pg .logged-in {
+	background: #e4e0d4;
+}
+.fan-pg .inner-2 .basic-profile {
+	background: #e4e0d4;
+}
+.fan-pg .inner-2 .basic-profile:hover {
+	background: #B1ADA1;
+}
+.fan-pg .header{
+	width: 100%;
+	background: url(../images/fan-images/cream-bg_02.png) repeat-x;
+}
+.fan-pg .inner-2 .basic-profile p {
+padding: 10px 3%;
+}
+.fan-pg .user-ticker-container .ticker-msg {
+	font-size: 20px;
+}
+.update-status:hover > .edit_section{
+	display: block;
+}
+.fan-pg .fangroup{
+	background: url(../images/msg.png) 23% center no-repeat;
+}
+.fan-pg .inner-6 #fan-base .email-friend,.fan-pg .inner-6 .invite-friend, .inner-6 .fan-group,.fan-pg .inner-6 #fan-base .sendmsgTo {
+	padding: 25px 30px 0;
+}
+#fan-base .fan-base ul li p.post-comment {
+	font-family: OpenSans-Bold;
+	width: 100%;
+	padding: 7px 0;
+	color: #15759e;
+	font-size: 14px;
+}
+.inner-6 .post-icon {
+	background: url(../images/fan-images/post-comment.png) no-repeat;
+	width: 16px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+.fan-pg #fan-base .fan-base ul li p.msg{
+	padding: 0;
+}
+.fan-pg .inner-6 .msg-container .msg{
+	height: 16px;
+}
+.fan-pg #edit-photos{
+	display: block;
+}
+.fan-pg .scout-alert,.coach-pg .scout-alert{
+	color: #c91f04;
+	font-size: 17px;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+.coach-pg .scout-alert{
+	margin-bottom: 5px;
+}
+.coach-pg .scout-tip #uploadFile1{ 
+	width: 75%;
+	height: 38px;
+	background: #fff;
+}
+.coach-pg .scout-tip .upload-resume{
+	margin-bottom: 10px;
+}
+.fan-pg .inner-11 .profile-details h3{
+	margin-bottom: 0;
+}
+.fan-pg .inner-11 .inner11col1 li,.fan-pg .inner-3 .inner11col1 li{
+	line-height: 22px;
+}
+.fan-pg .inner-11 .fan-details,.fan-pg .inner-3 .fan-details{
+	max-width: 395px;
+	padding-left: 15px;
+}
+.fan-pg .inner-11 .scout-tip p{
+	padding-left: 0;
+	font-size: 15px;
+	line-height: 17px;
+}
+.fan-pg .publish-btn,.user-ticker-container .publish-btn{
+	display: inline-block;
+	color: #fff;
+	padding: 10px 20px;
+	background: #4fad29;
+	text-align: center;
+	border-radius: 6px;
+	margin-right: 15px;
+}
+.fan-pg .publish-btn:hover,.user-ticker-container .publish-btn:hover{
+	background: #1C7A00;
+}
+.fan-pg .profile-details .edit_section{
+	top: 0;
+}
+.fan-pg .profile-details:hover .edit_section{
+	display: block;
+}
+.fan-pg .inner-11 #stats,.fan-pg .inner-11 #film,.fan-pg .inner-11 #photos,.fan-pg .inner-11 #academics,.fan-pg .inner-11 #fans,.fan-pg .inner-11 #profile,.fan-pg .inner-11 #forum {
+	background: #e4e0d4;
+}
+.fan-pg .inner-11 .nav-tabs>li.active>a,.fan-pg .inner-11 .nav-tabs>li.active>a:hover,.fan-pg .inner-11 .nav-tabs>li.active>a:focus {
+	background-color: #e4e0d4;
+	color: #15759e;
+}
+.fan-ticker.user-ticker-container-public ul {
+	margin-top: 7px;
+}
+ul.social-connect li {
+	margin-right: 5px;
+	width: 75px;
+	float: left;
+}
+.fan-pg .inner-3 .profile-details h3,.coach-pg .inner-3 .profile-details h3 {
+	font-size: 24px;
+	color: #727272;
+	margin-bottom: 0px;
+	padding: 0 0 5px;
+}
+.fan-pg .inner-3 .profile-details p,.coach-pg .inner-3 .profile-details p {
+	font-family: OpenSans-Italic;
+	font-size: 16px;
+	line-height: 20px;
+	color: #717171;
+}
+.fan-pg .inner-3 .profile-image p,.coach-pg .inner-3 .profile-image p {
+	font-size: 12px;
+	padding: 5px 0;
+}
+.fan-pg .inner-3 .scout-tip p {
+	padding-left: 0;
+	font-size: 15px;
+	line-height: 17px;
+}
+.fan-pg .inner-11 .scout-tip{
+	min-height: 170px;
+}
+.fan-pg .inner-11 {
+	margin-top: 20px;
+}
+.fan-pg .inner-11 .profile-image{
+	margin-bottom: 31px;
+}
+.fan-pg .user-ticker-container-public .ticker-msg {
+	font-size: 20px;
+	margin-top: 13px;
+}
+.fan-pg .inner-11 #photos p {
+	color: #717173;
+}
+.coach-pg .inner-3 .scout-tip p {
+	padding-left: 0;
+	font-size: 13px;
+	line-height: 17px;
+	margin-bottom: 0;
+}
+.coach-pg .inner-3 .scout-tip{
+	padding: 15px 20px;
+}
+.fan-pg .inner-3 .inner11col1 {
+	margin: 0;
+	padding: 0;
+}
+.fan-pg .athletic-profile .about-you fieldset textarea{
+	font-size: 21px;
+	border: 0;
+	box-shadow: none;
+}
+.fan-pg .athletic-profile .about-you {
+	border: 1px solid #ccc;
+	padding: 28px 28px;
+}
+.fan-pg .fav-team-list,.coach-pg .fav-team-list{
+	list-style: disc;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+.fan-pg .inner-3 .fan-details .glyphicon-plus,.coach-pg .inner-3 .fan-details .glyphicon-plus{
+	font-weight: bold;
+	color: #fff;
+	height: 26px;
+	width: 26px;
+	background: #e4e0d3;
+	vertical-align: top;
+	text-align: center;
+	font-size: 17px;
+	top: 0;
+	line-height: 26px;
+	cursor: pointer;
+}
+.coach-pg .inner-3 .fan-details .glyphicon-plus{
+	background: #5db9b4;
+}
+.coach-pg .inner-3 .scout-tip-right{
+	width: 62%;
+}
+.coach-pg .inner-3 .scout-tip-left{
+	width: 33%;
+}
+.coach-pg .inner-3 .scout-tip-left label{
+	font-size: 20px;
+	text-align: left;
+	color: #428bca;
+	display: inline;
+}
+.fan-pg .inner-3 .fan-details input[type="text"],.coach-pg .inner-3 .fan-details input[type="text"]{
+	width: 89%;
+	padding: 0 10px;
+	font-size: 17px;
+	line-height: 26px;
+	border: 0;
+	background: #f1f1f1;
+}
+.coach-pg .inner-3 .fan-details input[type="text"]{
+	width: 86%;
+}
+.coach-pg .inner-3 .fan-details input[type="text"].yrs{
+	width: 95%;
+}
+.fan-pg .inner-3 .fan-details textarea, .coach-pg .inner-3 .fan-details textarea{
+	width: 97%;
+	margin-top: 10px;
+	font-size: 17px;
+	line-height: 22px;
+	resize: none;
+	/* height: auto; */
+	padding: 0 10px;
+	margin-top: 15px;
+	background: #f1f1f1;
+	border: 0;
+}
+.fan-pg .inner-3 .fan-details textarea{
+	margin-top: 10px;
+}
+.fan-pg .inner-3 .scout-tip{
+	min-height: 170px;
+	margin-bottom: 48px;
+}
+.fan-pg .fav-team-list li,.coach-pg .fav-team-list li{
+	color: #7cc4bf;
+	line-height: 20px;
+}
+.fan-pg .add-star-btn,.coach-pg .coach-4 .add-star-btn{
+	background: #fec708;
+	padding: 7px;
+	color: #fff;
+	cursor: pointer;
+	margin: 3px;
+}
+.coach-pg .coach-4 .add-star-btn{
+	background: #4fad25;
+}
+.coach-pg .coach-4 .title {
+	font-family: OpenSans-Bold;
+	font-size: 20px;
+	color: #15759e;
+}
+.coach-pg .coach-4 .blu-txt {
+	color: #15759e;
+}
+.coach-pg .coach-4 .fan-list.strip {
+	background: #f1f1f1;
+}
+.fan-pg .stars-awarded .count,.coach-pg .stars-awarded .count{
+	margin-right:7px;
+	width: 25%;
+	display: inline-block;
+}
+.fan-pg .inner-3 .inner-8-leaderboard#tab1 .glyphicon-star {
+	color: #ffc540;
+	margin-right: 7px;
+	font-size: 36px;
+	vertical-align: text-top;
+}
+.blu-txt {
+	color: #15759e !important;
+}
+.fan-pg .inner-3  #tab1.inner-8-leaderboard:hover {
+	background: #0A6E05;
+}
+.fan-pg .inner-3 #inner-8-leader-rel, .fan-pg .inner-3 .inner-8-leaderboard {
+	background: #3da138;
+}
+.coach-pg .coach-4 .inner-8-leaderboard,.coach-pg .coach-4 #inner-8-shine-rel,.coach-pg .coach-4 #inner-8-leader-rel {
+	background: #5db9b4;
+}
+.coach-pg .main-content > .scout-tip {
+ 	display: block;
+	position: relative; 
+	z-index: 5;
+    min-height: 100px; 
+	 margin-right: 0px; 
+}
+.coach-pg .coach-4 .msg-icon {
+margin-left: 15px;
+}
+.coach-pg .coach-4  .stars-details {
+	background: #fff;
+	padding: 25px 30px;
+	min-height: 400px;
+	border-radius: 5px;
+}
+.fan-pg .inner-3 #inner-8-leader-rel .triangle-up {
+	border-bottom: 16px solid #3da138;
+}
+.fan-pg .inner-3 .award-star {
+	background: #48ad40;
+	padding: 10px 5px;
+	margin-right: 10px;
+}
+.fan-pg .inner-3  .award-star .glyphicon,.coach-pg .coach-4 .award-star .glyphicon {
+	margin-right: 0px;
+	color: #ffc540;
+}
+.coach-pg .coach-4 .inner-8-leaderboard{
+	margin-bottom: 0;
+}
+.coach-pg .coach-4 #inner-8-shine-rel .triangle-up {
+	position: absolute;
+	top: -15px;
+	right: 25%;
+	border-bottom: 16px solid #5db9b4;
+	border-right: 13px solid transparent;
+	border-left: 13px solid transparent;
+}
+.coach-pg .coach-4 #inner-8-leader-rel .triangle-up {
+	position: absolute;
+	top: -15px;
+	left: 25%;
+	border-bottom: 16px solid #5db9b4;
+	border-right: 13px solid transparent;
+	border-left: 13px solid transparent;
+}
+.fan-pg .inner-3 .award-star input {
+	width: 75px;
+	line-height: 20px;
+	font-size: 17px;
+	padding: 0 5px;
+}
+.fan-pg .inner-3 .count-txt, .fan-pg .inner-3 h3, .coach-pg .coach-4 h3 {
+	padding: 10px 0;
+}
+.fan-pg .inner-3 .count-txt, .fan-pg .inner-3 h3{
+	color: #9a9a9a;
+	font-family: OpenSans-Regular;
+	font-size: 18px;
+	clear: both;
+}
+.fan-pg .inner-3 .title-row{
+	padding: 0 17px;
+}
+.academic-profile-container span.other{
+	background: #b0cfe3 !important;
+}
+.academic-profile-container span.self{
+	background: #d4d1c6 !important;
+}
+.fan-group-icon {
+	background: url(../images/fan-images/fan_group.png) no-repeat;
+	width: 50px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+.fan-plus-icon {
+	background: url(../images/fan-images/plus_symbol.png) no-repeat;
+	width: 30px;
+	height: 29px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+.fan-pg .post-status .fan-comment .post-news textarea {
+min-height: 70px;
+vertical-align: top;
+}
+.fan-pg .inner-3 h3.title{
+	color: #15759e;
+	font-family: OpenSans-Bold;
+}
+.coach-pg .coach-4  a.view-profile {
+background: #46ae41;
+color: #fff;
+font-size: 15px;
+line-height: 33px;
+padding: 0 10px;
+border-radius: 5px;
+display: block;
+text-align: center;
+}
+.coach-pg .coach-4 .yellow-star {
+background: url(../images/yellow_star.png) no-repeat;
+width: 34px;
+height: 33px;
+display: inline-block;
+vertical-align: middle;
+}
+.inner-8 .fan-list {
+	position: relative;
+}
+.fan-pg .inner-8 .fan-list {
+	padding: 0 17px;
+}
+.fan-pg .fan-9 .fan-live-container{
+	max-width: 590px;
+	border: 7px solid #f0f0e8;
+	border-radius: 6px;
+	margin: 0 auto;
+}
+.fan-pg .fan-9 .sports-fan-live{
+	padding: 30px;
+		background: #253a65;
+	border: 1px solid #253a65;
+	border-radius: 6px;
+}
+.fan-pg .fan-9 .sports-fan-live h3{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.fan-pg .fan-9 .sports-fan-live p{
+	color: #fff;
+	font-size: 25px;
+	line-height: 30px;
+	font-size: 21px;
+	margin-bottom: 15px;
+	font-family: OpenSans-Semibold;
+	text-align: center;
+}
+.fan-pg .fan-9 .sports-fan-live input{
+	width: 100%;
+	height: 33px;
+	line-height: 23px;
+	padding: 10px;
+	border: 0;
+}
+.fan-pg .inner-11 .tabcontainer,.coach-pg .inner-11 .tabcontainer{
+	border: 0;
+}
+.fan-pg .tab-content,.coach-pg .tab-content{
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+	border-radius: 0 0 6px 6px;
+}
+.fan-pg .inner-11 .nav-tabs>li,.coach-pg .inner-11 .nav-tabs>li {
+border-right: 1px solid #c2c2c2;
+border-top: 1px solid #c2c2c2;
+/* border-left: 1px solid #c2c2c2; */
+}
+.fan-pg .inner-11 .tabcontainer .nav-tabs>li:first-child >a,.coach-pg .inner-11 .tabcontainer .nav-tabs>li:first-child >a{
+	border-left: 1px solid #c2c2c2;
+	border-radius: 6px 0 0;
+}
+.fan-pg .inner-11 .tabcontainer .nav-tabs>li.active:last-child >a,.fan-pg .inner-11 .nav-tabs>li:last-child {
+	border-radius: 0 6px 0 0;
+}
+.fan-pg .inner-11 .tabcontainer .nav-tabs>li.active:first-child >a,.coach-pg .inner-11 .tabcontainer .nav-tabs>li.active:first-child >a {
+	border-radius: 6px 0 0;
+	border-left: 1px solid #c2c2c2;
+}
+.fan-pg .inner-11 .nav-tabs>li:first-child,.coach-pg .inner-11 .nav-tabs>li:first-child {
+	border-radius: 6px 0 0;
+}
+.fan-pg .fan-9  .fan-live-icon{
+	background: url(../images/fan-images/fan_live.png);
+	width: 54px;
+	height: 56px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.team-name{
+	background: #1974a1;
+	padding: 10px 25px;
+	border-radius: 6px;
+}
+/*-------------------------------Styles for award pages-------------------------------------*/
+.fan-pg.award-pg .inner-3 .award-star,.coach-pg .coach-4 .award-star {
+background: #48ad40;
+padding: 5px 10px;
+margin-right: 10px;
+border-radius: 6px;
+width: 80%;
+margin: 10px auto 0;
+position: relative;
+z-index:5;
+cursor: pointer;
+color: #fff;
+}
+.award-section{
+	position: relative;
+}
+
+.award-form{
+	display: none;
+	border: 2px solid #46a11e;
+	border-radius: 6px;
+	position: absolute;
+	top: 27px;
+	z-index: 4;
+	width: 100%;
+}
+.award-form form{
+	background: #e6edf5;
+	padding: 20px 13px 8px 13px;
+	border-radius: 6px;
+	text-align: center;
+}
+.award-form form input[type="text"]{
+	width: 30%;
+	padding: 0;
+	height: 26px;
+	text-align: right;
+	padding-right: 8px;
+	font-size: 15px;
+	line-height: 23px;
+	color: #707070;
+}
+.award-form form input[type="submit"]{
+	vertical-align: top;
+	background: #253a65;
+	color: #fff;
+	border: 0;
+	border-radius: 6px;
+	padding: 3px 16px;
+}
+.award-form form input[type="submit"].purchase-btn{
+	padding: 10px 16px;
+}
+.award-form .close-form{
+	position: absolute;
+	bottom: -5px;
+	right: -7px;
+	cursor: pointer;
+}
+.user-ticker-container .award-section{
+	width: 39%;
+	color: #fff;
+	float: left;
+}
+.user-ticker-container .award-section .award-star{
+	margin-right: 0;
+	margin: 0 auto;
+	width: 90%;
+	border-radius: 6px;
+	position: relative;
+	z-index: 6;
+	text-align: center;
+}
+.sec-dropdown {
+	z-index: 999;
+}
+.user-ticker-container .login-to-award p {
+	background: none;
+	color: #707070;
+	padding: 5px 24px 5px;
+	line-height: 16px;
+}
+.award-form p{
+	text-align: center;
+	background: #253a65;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 0;
+	border-radius: 0 0 6px 6px;	
+}
+.award-form .confirmation-txt p{
+	background: inherit;
+	color:#15759e;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 0;
+}
+.new_icon {
+	top: 7px;
+}
+.award-form .confirmation-txt .green{
+	font-size: 20px;
+}
+.award-form .state2 p{
+	background: #e6edf5;
+	font-size:13px;
+}
+.user-ticker-container .stars-available{
+	margin-right: 7px;
+	background: #50ad28;
+	padding: 3px;
+}
+.coach-pg .user-ticker-container .stars-available{
+	background: #253a65;
+}
+.coach-pg .user-ticker-container .stars-available .glyphicon-star{
+	color: #50ad28;
+}	
+.inner-11 .tabcontainer .nav-tabs>li.active:first-child >a {
+border-radius: 6px 0 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #2a6496;
+}
+.inner-11 .tabcontainer .nav-tabs>li.active:last-child >a {
+border-radius: 0 6px 0;
+}
+.inner-11 .upload {
+	background: url(../images/icons/upload.png) no-repeat;
+	width: 19px;
+	height: 18px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.upload-dropdown{
+	text-align: left;
+	border: 1px solid #c2c2c2;
+	z-index: 5;
+	width: 208px;
+	top: 180px;
+	
+}
+.inner-11 .leaderboard-stars-count p,.inner-11 .shine-stars-count p{
+	position: relative;
+}
+.inner-11 .leaderboard-stars-count .count-val,.inner-11 .leaderboard-stars-count .glyphicon-star,.inner-11 .shine-stars-count .glyphicon-star{
+	font-weight: bold;
+}
+.inner-11 .leaderboard-stars-count p .glyphicon-play,.inner-11 .shine-stars-count p .glyphicon-play{
+	position: absolute;
+	right: 6px;
+	top: 11px;
+	color: #253c63;
+}
+.inner-11 .nav-tabs>li>a {
+	border-bottom: 1px solid #c2c2c2;
+}
+.inner-11 .nav-tabs>li{
+	border-right: 1px solid #c2c2c2;
+}
+.search-page ul li {
+font-size: 16px;
+line-height: 23px;
+}
+.search-page .profile-pic,.search-page .profile-info{
+	border-bottom: 1px solid #15759e;
+}
+.search-page .athlete-details{
+	padding-bottom: 0;
+}
+.search-page .profile-link {
+	padding: 0 17px 15px;
+}
+.glyphicon{
+	margin-right: 0;
+}
+.profile-image{
+	position: relative;
+}
+.inner-11 .triangle-up {
+	border-bottom: 11px solid #c2c2c2;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	position: absolute;
+	right: 33%;
+	top: -11px;
+}
+.upload-dropdown ul li a{
+	font-size: 14px;
+}
+.inner-11 .triangle-up:before {
+	content: '';
+	display: block;
+	border-bottom: 11px solid #fff;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	position: absolute;
+	right: -8px;
+	top: 2px;
+}
+.acc-set #notifications p , .acc-set #profile-settings p{
+	color: #b7b7b7;
+	line-height: 23px;
+}
+.fav-athletes-icon{
+	background: url(../images/award-images/checkbox_image.png) no-repeat;
+	width: 46px;
+	height: 47px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.coach-pg .coach-4 .award-star {
+	background: #1a2e53;
+}
+.coach-pg .coach-4 .award-star .glyphicon {
+	margin-right: 0px;
+	color: #50ad28;
+}
+.coach-pg .coach-4 a.view-profile {
+	background: #448eb3;
+}
+.coach-pg .coach-4 .add-star-btn {
+	margin-right: 7px;
+}
+.coach-pg .user-ticker-container .award-star {
+	background: #263c63;
+}
+.coach-pg .user-ticker-container .award-star .glyphicon-star{
+	color: #50ad28;
+}
+.fan-pg .user-ticker-container .glyphicon-star {
+	color: #ffc540;
+}
+.coach-pg .academic-profile-container .edit_section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+/*--------------------------------------media Queries for Coach Pages-----------------------*/
+@media screen and (min-width:992px) and (max-width:1730px){
+	
+	.banner{
+		height: 506px !important;
+	}
+	.banner img {
+		margin: 0 auto;
+		min-height: 150px;
+		height: auto !important;
+	}
+}
+@media (min-width:768px) and (max-width: 991px){
+	.fan-pg .inner-3 h3{
+		text-align: left;
+	}
+
+
+	.fan-pg .inner-3 .fan-details textarea {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+.scoutsview-vdo .confirmation span{
+		width: 60%;
+	}
+	.user-ticker-container12 ul li a {
+		padding: 7px 10px;
+	}
+	.fan-pg .inner-3 .fan-details {
+		 padding-left: 0px; 
+	}
+	.fan-pg .inner-11 .fan-details, .fan-pg .inner-3 .fan-details {
+		max-width: 100%; 
+	}
+	.fan-pg .inner-11 .scout-tip{
+		margin-bottom: 0;
+	}
+	.coach-pg .inner-3 .fan-details{
+		margin: 0 0 10px;
+	}
+	.coach-pg .inner-3 .fan-details input[type="text"].yrs {
+		width: 100%;
+	}
+	.coach-pg .inner-3 .fan-details input[type="text"] {
+		width: 96.5%;
+	}
+	.coach-pg .coach-4 .inner-8-leaderboard#tab1{
+		width: 50%;
+		float: left;
+	}
+	.coach-pg .coach-4 .inner-8-leaderboard#tab2{
+		width: 50%;
+		float: right;
+	}
+	.coach-pg .coach-4 .pdl0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.coach-pg .coach-4 .award-star {
+		background: #1a2e53;
+		margin-right: 0;
+		margin-left: 15px;
+		max-width: 155px;
+	}
+	.coach-pg .coach-4 h3 {
+		padding: 10px 0;
+		text-align: left;
+	}
+	.coach-pg .stars-awarded .count {
+		margin-right: 7px;
+		width: 30px;
+	}
+
+}
+@media screen and (max-width:767px){
+	.coach-9 p{
+		margin-bottom: 10px;
+	}
+	.acc-set #payment-methods .expiration label {
+		width: 38%;
+	}
+	.acc-set #payment-methods .expiration input {
+		width: 56%;
+	}
+	.acc-set .calendar-container .glyphicon {
+		margin-right: 0;
+		position: absolute;
+		left: 70%;
+	}
+	.coach-pg .stars-awarded .count {
+		margin-right: 7px;
+		width: 30px;
+	}
+	.coach-pg .coach-4 h3 {
+		padding: 10px 0;
+		text-align: left;
+	}
+	.coach-pg .coach-4 .award-star {
+		background: #1a2e53;
+		margin-right: 0;
+		margin-left: 0;
+		max-width: 155px;
+	}
+	.coach-pg .coach-4 .inner-8-leaderboard p {
+		font-size: 18px;
+	}
+	.coach-pg .coach-4 .stars-details .pdr0 .title{
+		padding-left: 15px;
+	}
+	.coach-pg .coach-4 .pdl0,.coach-pg .coach-4 .pdr0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.coach-pg .coach-4 .inner-8-leaderboard {
+		margin-bottom: 10px;
+	}
+	.coach-pg .inner-3 .fan-details input[type="text"] {
+		width: 95%;
+	}
+	.coach-pg .inner-3 .fan-details input[type="text"].yrs {
+		width: 98%;
+	}
+	.coach-pg .inner-3 .scout-tip-right,.coach-pg .inner-3 .scout-tip-left {
+		width: 100%;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.coach-pg .inner-3 .fan-details{
+		margin: 0 0 10px;
+	}
+	.fan-pg .inner-11 .scout-tip{
+		margin-bottom: 0;
+	}
+	.fan-pg .inner-11 .fan-details, .fan-pg .inner-3 .fan-details {
+		max-width: 100%; 
+	}
+	.academic-profile-container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.fan-pg .inner-3 h3{
+		text-align: left;
+	}
+	.fan-pg .inner-3 .fan-details {
+		 padding-left: 0px; 
+	}
+	.fan-pg .inner-3 .fan-details textarea {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+
+	.scoutsview-vdo .confirmation span{
+		width: 60%;
+	}
+	.primary-nav ul li.dropdown a {
+		padding-left: 13%;
+	}
+	.coach-pg .academic-profile-container p.coach-msg {
+		font-size: 19px;
+		padding: 10px;
+		color: #d02617;
+		line-height: 37px;
+	}
+	.fan-pg .inner-11 .social {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+}
+@media (max-width:640px){
+	.acc-set #payment-methods .expiration label {
+		width: 100%;
+	}
+	.acc-set #payment-methods .expiration input {
+		width: 100%;
+	}
+	.coach-pg .inner-3 .fan-details input[type="text"] {
+		width: 93%;
+	}
+	.coach-1 .radiobutton1-label{
+		width: 100%;
+	}
+	.coach-1 .radiobutton1-label.reslabel{
+		margin-left: 0;
+		width: 100%;
+		border-left: 1px solid #a4a4a4;
+	}
+		.scoutsview-vdo .vdo .plya-btn span > em {
+		padding: 26px 0 0 0;
+	}
+	.scoutsview-vdo .confirmation .btn {
+		font-size: 14px;
+	}
+	.acc-set #acc-info label, .acc-set #payment-methods label, .acc-set #notifications .email-notification label,.acc-set .sch-level{
+		width: 100%;
+		text-align: center;
+	}
+	.acc-set #acc-info input, .acc-set #acc-info .calendar-container, .acc-set #payment-methods input, .acc-set #notifications .email-notification input{
+		width: 100%;
+		text-align: center;
+		border-top: 0;
+		border-left: 1px solid #a4a4a4;
+	}
+	.acc-set .calendar-container{
+		margin-left: 0;
+	}
+	.acc-set #acc-info .schlevelbtn {
+		border-top: 0;
+		border-left: 1px solid #a4a4a4;
+		width: 33.3% !important;
+	}
+	.acc-set #acc-info .calendar-container{
+		display: inline-block;
+	}
+	.acc-set #profile-settings .prof-title,.acc-set #profile-settings .prof-stat,.acc-set #profile-settings .prof-radio,.acc-set #privacy-settings .field{
+		width: 100%;
+		margin:5px 0;
+	}
+	.acc-set .security-code{
+		float: none;
+	}
+	.acc-set #payment-methods .security-code input {
+		width: 48%;
+		border-top: 1px solid #a4a4a4;
+	}
+	.acc-set #payment-methods .expiration input {
+		width: 100%;
+		border-top: 1px solid #a4a4a4;
+	}
+	.acc-set #payment-methods .security-code label {
+		border-right: 0;
+	}
+
+	#notifications label{
+		display: inline;
+	}
+}
+@media (max-width: 520px){
+	.coach-pg .scout-tip #uploadFile1 {
+		width: 100%;
+		height: 38px
+	}
+}
+@media (max-width:480px){
+	
+	.user-ticker-container ul {
+		float: right;
+		margin-bottom: 12px;
+	}
+	.award-form form input[type="submit"] {
+		padding: 6px 16px;
+	}
+	.user-ticker-container .login-to-award p{
+		font-size: 16px;
+	}
+	.award-form p {
+		font-size: 20px;
+	}
+	.inner-11 .become-fan {
+		float: none; 
+		margin-bottom: 10px;
+	}
+	.fan-pg .inner-11 .profile-details h3 {
+		clear: both;
+	}
+	.user-ticker-container .award-section {
+		width: 97%;
+	}
+	.analytics_btn p {
+	padding-left: 60px;
+	}
+	.reports_icon {
+		background: url(../images/coach-images/coach_pg8_06.png) no-repeat 10% center;
+	}
+	.analytics_icon {
+		background: url(../images/coach-images/coach_pg8_08.png) no-repeat 10% center;
+	}
+	.qvidieo_icon {
+		background: url(../images/coach-images/coach_pg8_03.png) no-repeat 10% center;
+	}
+	.fan-pg .publish-btn, .user-ticker-container .publish-btn{
+		margin-bottom: 10px;
+	}
+	.fan-pg .inner-11 .social {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.fan-pg .fan-9 .sports-fan-live h3 {
+		font-size: 24px
+	}
+	.fan-pg .fan-9 .fan-live-icon{
+		margin-bottom: 12px;
+	}
+	.fan-pg .fan-9 .sports-fan-live p {
+		line-height: 19px;
+		font-size: 15px;
+	}
+	.fan-pg .fan-9 .sports-fan-live input {
+		width: 100%;
+		font-size: 11px;
+		border: 0;
+	}
+	.fan-pg .inner-3 .fan-details input[type="text"], .coach-pg .inner-3 .fan-details input[type="text"] {
+		width: 84%;
+	}
+	.fan-pg .athletic-profile .about-you fieldset textarea {
+		font-size: 17px;
+	}
+	.acc-btn{
+		margin-bottom: 10px;
+	}
+	.acc-set #acc-info .schlevelbtn {
+		border-top: 0;
+		border-left: 1px solid #a4a4a4;
+		width: 33.3% !important;
+		min-height: 51px;
+		font-size: 15px;
+	}
+	.acc-set #payment-methods .expiration label {
+		width: 46%;
+	}
+	.acc-set #payment-methods .expiration input {
+		width: 54%;
+	}
+	.fan-pg .inner-3 .award-star input {
+		width: 68px;
+		line-height: 20px;
+		font-size: 15px;
+	}
+	.fan-pg .inner-3 .award-star {
+		background: #48ad40;
+		padding: 10px 0px;
+	 	margin-right: 0; 
+	}
+	.fan-pg .inner-3 h3.title{
+		line-height: 24px;
+	}
+}
+@media (max-width:320px){
+	
+	.acc-set .sch-level {
+		width: 100%;
+	}
+}

@@ -1,0 +1,1087 @@
+/* CSS Document */
+@media(min-width:1200px){
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+		display: block;
+	}
+	.container{
+		
+	}
+			.search-page .profile-pic{
+		width: 19.4%;
+	}
+	.search-page .profile-info{
+		width: 80.6%;
+	}
+	.search-page .left-col{
+		width: 69.29657794676806%;
+	}
+	.search-page .right-col{
+		width: 30.703422053231947%;
+	}
+	.filter-by-gender{
+		width: 47.50499001996008%;
+	}
+	.filter-by-sport{
+		width: 52.49500998003992%;
+		padding-left: 7px;
+	}
+
+}
+
+@media(min-width:992px) and (max-width:1199px){
+	.user-ticker-container12 ul li a{
+		margin-right: 0;
+		padding: 7px;
+	}
+	.customize-banner {
+		width: 970px;
+		margin-left: -485px;
+	}
+	.header .blue{
+		background: #fff;
+	}
+	.inner-4 .fileUpload.btn{
+		margin-bottom: 10px;
+	}
+	.choose-sport ul li { padding-bottom:15px; float: left; display: block; width: 210px;}
+	.athletic-profile .choose-sport .question{ clear: both; display: block;}
+	.basic-stats .left-zero{ padding-left: 15px;}
+	.inner-2 .athlete-profile-manager{
+		margin-left: 15px;
+	}
+	.inner-2 .basic-profile{
+		width: 46.8%;
+	}
+	.main-content .user a.view-profile{
+		float: left;
+		clear: both;
+	}
+	
+	.filter-by-gender .btn{
+		margin-bottom: 10px;
+		width: 98%
+	}
+	.filter-by-sport .dk-select {
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.filter-by-gender .dk-select{
+		width: 98%;
+		max-width:100%;
+	}
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+		display: block;
+	}
+	.inner-6, inner-8{
+		padding: 25px;
+	}
+	.logged-in{
+		right: 0;
+	}
+	
+	.search-form .icon-female, .search-form .icon-male{
+		max-width: 50%;
+	}
+	.search-page h2 {
+		padding: 0 9px 0;
+	}
+	.search-page .profile-pic{
+		width: 19.4%;
+	}
+	.search-page .profile-info{
+		width: 80.6%;
+	}
+	.search-page .left-col{
+		width: 69.29657794676806%;
+	}
+	.search-page .right-col{
+		width: 30.703422053231947%;
+	}
+
+.banner .register-form-container {
+		width: 940px;
+		margin-left: -470px;
+	}
+	.primary-nav ul li a span.block{
+		display: block;
+	}
+	.user-ticker-container .ticker-msg {
+		font-size: 20px;
+	}
+	.filter-discussions .search .btn{
+		margin-top: 7px;
+	}
+
+
+}
+
+
+@media(min-width:768px) and (max-width:991px){
+	.customize-banner {
+		width: 750px;
+		margin-left: -375px;
+	}
+	.inner-11 .row{
+		padding: 15px;
+		margin-left: 0;
+		margin-right: 0px;
+	}
+	.filter-select {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.scoutsview-vdo .left-zero{
+		padding-left: 15px;
+		padding-bottom: 15px;
+	}
+	.user-ticker-container12 ul li{
+		margin-left: 10px;
+	}
+	.user-ticker-container12 .ticker-msg {
+		text-align: center;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.inner-8 .inner-8-leaderboard{
+		margin-bottom: 10px;
+	}
+	#sendtabs input[type='radio'] {
+		opacity: 0;
+		width: 100%;
+	}
+	#sendtabs #tabs-3 form{
+		padding: 0 20px 20px;
+	}
+	
+	.inner-4 .pd0{
+		padding: 20px 0 0 !important;
+	}
+	.inner-6, .inner-8{
+		padding: 30px;
+	}
+	.inner-2 .athlete-profile-manager{
+		margin-left: 15px;
+	}
+	.inner-2 .basic-profile{
+		width: 45.8%;
+	}
+	.subscribe{
+		padding-top: 10px;
+	}
+	#tabs ul li a .btn, .custom-tab-6 > ul li a .btn {
+		font-size: 24px;
+	}
+	.filter-by-gender .btn, .filter-by-sport .btn{
+		width: 100%;
+		margin-bottom:10px;
+	}
+	.filter-by-sport .dk-select, .filter-by-gender .dk-select{
+		max-width: 100%;
+		width: 100%;
+		margin-bottom:10px;
+	}
+	.inner-6 .pdl0, .inner-8 .pdl0{
+		padding-left: 15px;
+	}
+	.inner-6 .pdr0, .inner-8 .pdr0{
+		padding-right: 15px;
+	}
+	.logged-in{
+		right: 0;
+	}
+	.inner-12 .ad{
+		float: none;	
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.right-col{
+		padding: 0;
+	}
+	.search-form .icon-female, .search-form .icon-male{
+		max-width: 50%;
+	}
+	.banner img{
+		height: auto !important;
+	}
+	.banner-text{
+		display: none;
+	}
+
+.banner .register-form-container {
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.create-profile{
+		position: static;
+		text-align: center;
+	}
+	.create-profile form {
+		max-width: 366px;
+		margin: 0 auto;
+	}
+	.primary-nav ul li a span.block{
+		display: block;
+	}
+	.user-ticker-container .ticker-msg {
+		font-size: 20px;
+	}
+	
+	.basic-static .resize{ width:100%;}
+	.drop-info{ padding-bottom:15px;}
+	.basic-static .height-bench{ padding-bottom:15px;}
+	.import-statistics .statistic-database{ line-height:21px;}
+	.import-statistics .statistic-database span{ padding-top:35px; display:block;}
+	.athletic-profile .choose-sport ul li { padding-bottom:15px; float: left; display: block; width: 33%;}
+	.athletic-profile .choose-sport .question{ clear: both; display: block;}
+	.basic-stats .left-zero{ padding-left: 15px;}
+	.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}
+	.header .blue{
+		background: #fff;
+	}
+	.inner-8 .title.pdll{
+		padding-left: 0;
+	}
+	.inner-8 .blu-txt, .inner-8 .fan-list .green-star,.inner-8 .yellow-star{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.inner-8 a.view-profile.pcomment {
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+	.inner-8 a.view-profile.pcomment,.view-btn {
+		max-width: 150px;
+		margin-bottom: 10px;
+	}
+	.inner-8 .pdlm{
+		padding-left: 15px;
+	}
+	
+}
+
+@media(max-width:767px){
+	.user-ticker-container12 .ticker-msg {
+		text-align: center;
+	}
+	.customize-banner {
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+	.inner-8 .pdlm{
+		padding-left: 15px;
+	}
+	.inner-8 .blu-txt, .inner-8 .fan-list .green-star,.inner-8 .yellow-star{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.inner-8 a.view-profile.pcomment,.view-btn {
+		max-width: 150px;
+		margin-bottom: 10px;
+	}
+	.inner-8 .blu-txt{
+		margin-bottom: 10px;
+	}
+	.inner-8 .title.pdll,.inner-8 .title.pdlm{
+		padding-left: 0;
+	}
+	.filter-select {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.athletic-profile .choose-sport ul li { padding-bottom:15px; float: left; display: block; width: 50%;}
+	.header .blue{
+		background: #fff;
+	}
+	.user-ticker-container12 ul li{
+		margin-left: 15px;
+	}
+	.user-ticker-container12 .ticker-msg {
+		margin-bottom: 10px;
+		display: block;
+	}
+	.inner-8 .inner-8-leaderboard{
+		margin-bottom: 10px;
+	}
+	#sendtabs input[type='radio'] {
+		opacity: 0;
+		width: 100%;
+	}
+	#sendtabs #tabs-3 form{
+		padding: 0 20px 20px;
+	}
+	.inner-6 .send, .inner-6 .cancel {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.inner-4 .fileUpload.btn{
+		width: 100%;
+		max-width: 200px;
+	}
+	.inner-4 fieldset .mbm{
+		margin-right: 0;
+		font-size: 18px;
+	}
+	.inner-4 h3 {
+		font-size: 16px;
+	}
+	.inner-4 .photo-title textarea, .inner-4 .photo-title input[type="text"]{
+		font-size: 14px;
+	}
+	.inner-4 .pd0{
+		padding: 20px 0 0 !important;
+	}
+	.banner img{
+		height: auto !important;
+	}
+	filter-by-sport .dk-select{
+		max-width: 100%;
+	}
+	.filter-by-gender .dk-select, .filter-by-gender .dk-select-multi, .filter-by-sport .dk-select, .filter-by-sport .dk-select-multi{
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+	.filter-by-gender .btn{
+		margin-bottom: 10px;
+	}
+	.fb-friend .user-details{
+		margin-bottom: 20px;
+		clear: both;
+	}
+	.inner-6, .inner-8{
+		padding: 30px;
+	}
+	.inner-6 .pdl0, .inner-8 .pdl0{
+		padding-left: 15px;
+	}
+	.inner-6 .pdr0, .inner-8 .pdr0{
+		padding-right: 15px;
+	}
+	.sec-dropdown{
+		top: 183px;
+		width: 100%;
+	}
+	.sec-dropdown ul{
+		float: none;
+	}
+	.inner-12 .ad{
+		float: none;
+		text-align: center;
+	}
+	.right-col{
+		padding: 0;
+	}
+	.search-form .icon-female, .search-form .icon-male{
+		max-width: 50%;
+	}
+	.banner .register-form-container {
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.create-profile{
+		position:static;
+		margin-top: 15px;
+	}
+	
+	.basic-static .resize{ width:100%;}
+		.import-statistics .statistic-database{ line-height:21px;}
+	.import-statistics .statistic-database span{ padding:35px 10px 35px; display:block; font-size:16px;}
+		.choose-sport ul li { padding-bottom:15px;}
+		.fill-out .btn{ margin-bottom:10px; display:block; text-align:center;}
+		.import-statistics .statistic-database{ height: auto;}
+		.basic-stats .drop-info .dk-selected, .basic-stats .drop-info .dk-option {
+			font-size: 17px;
+		}
+
+}
+
+@media(max-width:480px){
+	.inner-8-leaderboard p {
+		font-size: 17px;
+	}
+	.nav-tabs > li {
+        float:none;
+    }
+	.athletic-profile .choose-sport ul li { padding-bottom:15px; float: left; display: block; width: 100%;}
+
+}
+
+
+
+@media screen and (max-width:1200px){
+	.logo{
+		width:100%;
+		padding-bottom: 0;
+	}
+	.login-wrapper {
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+	.login-wrapper .btn{
+		position: relative;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #e7e7e7;
+		text-align: c;
+		margin: 0 auto;
+		max-width: 895px;
+	}
+	.navbar{
+		margin-top:15px;
+		width: 100%;
+	}
+	 #profile-manager {
+		display:none;
+	}
+	
+	 .slicknav_menu {
+		display:block;
+	}
+	.filter-discussions {
+		width: 100%;
+	}
+	.inner-11 .leaderboard-stars-count, .inner-11 .shine-stars-count {
+		float: none;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	
+}
+
+
+@media screen and (max-width: 767px){
+	.inner-11 #film p {
+		padding-bottom: 20px;
+	}
+	.inner-11 #fans .fans-list img{
+		margin-bottom: 10px;
+		display:block;
+	}
+	.inner-11 #film .edit_section {
+		top: 30px;
+		right: 10px;
+	}
+	.filter-discussions .search .btn{
+		margin-top: 10px;
+	}
+	.inner-11 #film img{
+		float: none;
+	}
+	.inner-11 #academics .ac-btn{
+		display: block;
+		max-width: 150px;
+		margin-top: 10px;
+	}
+	
+	.inner-11 .heading-title,.inner-11 #academics h3 {
+		font-size: 20px;
+	}
+	.inner-11 #profile p,.inner-11 #academics .acd-standings ul li,.inner-11 #academics p,.inner-11 #film p {
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.inner-11 .stats-content ul li {
+		font-size: 17px;
+	}
+	.inner-11 .leaderboard-stars-count, .inner-11 .shine-stars-count {
+		float: none;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	.inner-11{
+		padding: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.scoutsview-vdo .left-zero{
+		padding-left: 15px;
+	}
+	.inner-6 .fb-friend{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.scout-tip p, .scout-tip h2{
+		padding-left: 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.fb-btn{
+		float: left;
+		clear: both;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	.fb-friend li h4 {
+		margin-left: 0;
+	}
+	.filter-discussions {
+		width: 100%;
+	}
+	.basic-static .height-bench label{
+		font-size: 15px;
+	}
+	.basic-stats .left-zero{
+		padding-left: 15px;
+	}
+	.gray-bg{
+		background: #fff !important;
+	}
+	.opc01{
+		opacity: 1 !important;
+	}
+	.backgroundPopup{
+		display: none !important;
+	}
+	.ticker-msg2 em{
+		display: block;
+		line-height: 18px;
+	}
+	.subscribe{
+		padding-top: 10px;
+	}
+	.main-content .user a.view-profile{
+		clear: both;
+	}
+
+	.navbar-nav .open .dropdown-menu {
+		padding: 10px 50px;
+	}
+	ul.nav > li.dropdown:hover > a {
+		background: url(../images/drop_down_active.png) 10% 50% no-repeat #e28711;
+	}
+	.banner-text{
+		display: none;
+	}
+	.banner .register-form-container {
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+		.logo{
+		width: 70%;
+		padding: 24px 10px 15px;
+		text-align: left;
+		position: relative;
+		z-index:8;
+	}
+	.header.home{
+		padding-bottom: 10px;
+	}
+	.logo img{
+		max-width: 100%;
+	}
+	.login-wrapper {
+		position: relative;
+		right: 15px;
+		float: right;
+	}
+	.logged-in{
+		position: static;
+		max-width: 100%;
+	}
+	.logged-in .user-details{
+		float: left;
+	}
+	.navbar{
+		position: absolute;
+		top: 12px;
+		right: 5px;
+		z-index: 5;
+	}
+	.primary-nav ul li a {
+		display: inline-block;
+		padding: 15px 22px 15px 12%;
+	}
+	#tabs > ul li {
+		width: 100%;
+	}
+
+	.open .drop-down-icon {
+		background: url(../images/drop_down_active.png) 9% 50% no-repeat;
+	}
+	.drop-down-icon {
+		background: url(../images/icons/dropdown.png) 9% 50% no-repeat;
+	}
+	ul.nav > li.dropdown:hover > a {
+		background: url(../images/drop_down_active.png) 9% 50% no-repeat #e28711;
+	}
+	#tabs ul li a .btn {
+		width: 100%;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	#leaderboard-rel .triangle-up {
+		left: 48%
+	}
+	#shine-rel .triangle-up{
+		right: 48%;
+	}
+	.user-ticker-container{
+		text-align: center;
+	}
+	.user-ticker-container .ticker-msg {
+		margin-bottom: 15px;
+	}
+	.user-ticker-container .ticker-details{
+		float: none;
+		margin-top: 12px;
+		text-align: center;
+	}
+	.user-ticker-container .ticker-details ul{
+		float: none;
+	}
+	.create-profile {
+		position: static;
+		margin-top: 5px;
+		text-align: center;
+	}
+	.navbar-nav>li>a{
+		width: 100%;
+	}
+	#navbarCollapse ul li a span{
+		display: inline;
+	}
+	.inner-2 .basic-profile {
+		width: 100%;
+		margin-left: 0;
+	}
+	/*-----------------------Academic Profile Styles--------------------------*/
+	.academic-profile .btn-wrap p{
+		text-align: center;
+		float: none;
+	}	
+	.academic-profile .grade-level{
+		margin-bottom: 0px;
+		display: block;
+	}
+	.academic-profile .dk-select{
+		width: 100%;
+	}
+	/*-----------------------End of Academic Profile Styles---------------------*/
+	
+	.social-profile{ width:100%;}
+			.social-profile .coaches-fans input{ width:88%;}
+			.post-status{ float:left; width:85%;}
+			.post-status .fan-comment .post-news{ width:80%; float:left;}
+				.social-profile .coaches-fans fieldset .publish{ float:left; margin-left:10px;}
+				.scoutsview-vdo .confirmation span{ width:54%;}
+				.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}
+	
+	
+	
+}
+@media screen and (max-width: 640px){
+	.inner-8 .inner-8-leaderboard{
+		margin-bottom: 10px;
+	}
+	.academic-profile .grade-level{
+		margin-bottom: 10px;
+	}
+	.academic-profile .hide-profile-tab span{
+		display: block;
+		float: none;
+	}
+	.academic-profile .hide-profile-tab span.input-wrap{
+		display: inline-block;
+		margin-top: 10px;
+	}
+	
+	.inner-6 #fan-base .fan-base .add-email,.inner-6 .invite {
+		width: 100%;
+		margin-left: 0;
+	}
+	.inner-6 #fan-base .fan-base input[type="text"] {
+		width: 100%;
+		margin-bottom:10px;
+		margin-left: 0;
+	}
+	.inner-1 {
+		padding: 0 10px;
+		margin: 50px auto;
+	}
+	.inner-1 h1 {
+		font-size: 45px;
+		text-align:center;
+	}
+	.inner-1 input {
+		border: 1px solid #a4a4a4 !important;
+		max-width: 100% !important;
+	
+	}
+	
+.social-profile{ width:100%;}
+	.social-profile .coaches-fans input{ width:88%;}
+	.social-profile .coaches-fans fieldset .save{ width:30%;}
+	.social-profile .coaches-fans fieldset .prev{ width:30%;}
+	.social-profile .coaches-fans fieldset .publish{ width:30%; float:left; margin-left:9px;}
+		.post{ width:30%; font-size:14px;}
+	.full-profile{ width:65%; font-size:14px;}
+	.scoutsview-vdo .confirmation span{ width:40%; margin-right:10px; font-size:12px; line-height:18px;}
+	.scoutsview-vdo .confirmation .btn{ width:145px;}
+	.scoutsview-vdo .vdo .plya-btn span em{ font-size:26px; padding-bottom:22px;}
+	.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}	
+	.footer ul.copyright-text li a{
+		margin-bottom: 0;
+	}
+	.footer ul.copyright-text {
+		margin-top: 50px;
+		text-align: center;
+		line-height: 20px;
+	}
+	.footer .copyright {
+		margin-bottom: 15px;
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 520px){
+	
+	.academic-profile-container{
+		width: 90%;
+	}
+	.reslabel{
+		margin-left: 45px;
+		border-left: 1px solid #ccc;
+	}
+	
+	.inner-6 #fan-base .fan-base h3{
+		padding-left: 0;
+	}
+	.scout-tip h3{
+		font-size: 20px;
+	}
+	.update-status h3{
+		padding-bottom: 10px;
+	}
+	.inner-6 .send, .inner-6 .cancel {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.basic-static .height-bench label{
+		display: block;
+		line-height: 25px;
+	}
+	.basic-static .height-bench label {
+		height: auto;
+	}
+	.basic-static .height-bench input{
+		margin-bottom: 10px;
+	}
+	
+	.dk-selected{
+		font-size: 20px;
+	}
+	.inner-2 .basic-profile {
+		width: 100%;
+		margin-left: 0;
+	}
+	.banner .register-form-container {
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.create-profile{
+		position:static;
+		margin-top: 15px;
+	}
+	.main-content .features {
+		text-align: center;
+		width: 100%;
+	}
+
+
+	.academic-profile #uploadFile1, .academic-profile #uploadFile2 {
+		width: 100%;
+	}
+	.filter-by-gender .btn, .filter-by-sport .btn{
+		width: 100%;
+		margin: 10px 0;
+		padding: 12px 0;
+	}
+	.filter-by-gender .select, .filter-by-sport .select {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.filter-by-gender, .filter-by-sport{
+		padding: 0;
+		float: none;
+	}
+	.filter-by-gender .btn, .filter-by-sport .btn {
+		font-size: 14px;
+	}
+	.fileUpload.btn{
+		float: none;
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	
+	.social-profile{ width:100%;}
+	.social-profile .coaches-fans input{ width:80%;}
+	.post-status{ width:80%;}
+	.post{ width:30%; font-size:14px;}
+	.full-profile{ width:65%; font-size:14px;}
+		.scoutsview-vdo .vdo .plya-btn span > em{ padding:30px 0 0 0;}
+		.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}
+		
+		.update-status .you{
+			margin-bottom: 10px;
+			float: none;
+		}
+		.post-status {
+			width: 100%;
+		}
+		.post-status span {
+			font-size: 16px;
+		}
+		.post-status p {
+			line-height: 25px;
+			font-size: 16px;
+		}
+		.post-status .fan-comment {
+			background: #f1f1f1;
+			margin-top: 10px;
+		}
+		.post-status .fan-comment .post-news {
+			width: 100%;
+		}
+		.post-status .fan-comment .post-news textarea,.post-status .post-news textarea {
+			font-size: 16px;
+		}
+		.create-profile h3 {
+			font-size: 36px;
+		}
+		.create-profile .styledSelect {
+			font-size: 22px;
+		}
+		.create-profile .select-span {
+			font-size: 22px;
+			padding: 13px 5px;
+		}
+		.create-profile input, .create-profile select, .create-profile textarea {
+			padding: 6px 5px;
+			font-size: 24px;
+		}
+		.academic-profile-container span.blue{
+			float: none;
+			display: inline-block;
+		}
+		.academic-profile span.share{
+			display: inline-block;
+			float: none;
+			margin: 10px 0;
+		}
+		.academic-profile span.grade-level, .academic-profile span.graduation-date{
+			width: 100%;
+		}
+		.academic-profile-container h2{
+			font-size: 24px;
+		}
+		.academic-profile fieldset .half {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	
+		.inner-8 fieldset .upgrade{
+			width: 100%;
+			margin-left: 0;
+			font-size: 20px;
+		}
+	
+}
+
+@media screen and (max-width: 420px){
+	.inner-12 p {
+		font-size: 16px;
+	}
+	.inner-12 h3 {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+	.inner-8 .fan-list h3{
+		font-size: 17px;
+	}
+	.inner-8 .msg-icon{
+		display: none;
+	}
+	.inner-1 h1 {
+		font-size: 30px;
+	}
+	.inner-1 p{
+		line-height: 20px;
+	}
+	.inner-1 input{
+		font-size: 14px;
+	}
+	.inner-1 .add-apt {
+		font-size: 14px;
+		top: 17px;
+	}
+	.user-ticker-container12 ul li {
+		float: none;
+		
+	}
+
+	.user-ticker-container12 ul li a {
+		margin-right: 0px;
+		color: #fff;
+		display: inline-block;
+		padding: 7px 14px;
+		width: 95%;
+		margin-bottom: 5px;
+	}
+	.user-ticker-container12 .ticker-msg {
+		font-size: 23px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	 .inner-6 #fan-base {
+		padding: 15px;
+	}
+	.inner-6 #fan-base .fan-base{
+		padding: 15px;
+	}
+	.fb-btn {
+		font-size: 13px;
+	}
+	.inner-6 .invite{
+		width: 100%;
+		margin-left: 0;
+		line-height: 23px;
+	}
+	.inner-6 #fan-base .fan-base input[type="text"] {
+		width: 100%;
+		font-size: 16px;
+		margin-left: 0;
+	}
+	.inner-6 #fan-base .fan-base .add-email {
+		width: 100%;
+		background: #76a7bf;
+		border: 0;
+		padding: 10px 35px;
+		margin-top: 18px;
+		margin-left: 0;
+	}
+	#tabs ul li a .btn {
+		width: 100%;
+		font-size: 16px;
+	}
+	ul.nav > li.dropdown:hover > a {
+		background: url(../images/drop_down_active.png) 8% 50% no-repeat #e28711;
+	}
+	.main-content .user {
+		text-align: center;
+	}
+	.main-content .user img{
+		float: none;
+	}
+	.main-content .user .user-details {
+		float: none;
+		margin-left: 0; 
+	}
+	.main-content .user a.view-profile {
+		display: block;
+		float: none;
+	}
+	.banner .register-form-container {
+		position: static;
+		width: 100%;
+		margin-left: 0;
+	}
+	.create-profile{
+		position:static;
+		margin-top: 15px;
+	}
+	.user-ticker-container .ticker-msg{
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+
+	/*-----------------------Academic Profile Styles--------------------------*/
+	.academic-profile .btn-wrap .btn{
+		width: 100%;
+	}
+	.academic-profile .btn-wrap .btn.preview-btn{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.create-profile h3 {
+		font-size: 36px;
+	}
+	.create-profile .styledSelect {
+		font-size: 23px;
+	}
+	.create-profile .select-span {
+		font-size: 23px;
+		padding: 13px 5px;
+	}
+	.iam .sbSelector{
+		font-size: 20px;
+	}
+	.iam .sbOptions a {
+		font-size: 20px;
+		line-height: 29px;
+	}
+	.create-profile input, .create-profile select, .create-profile textarea {
+		padding: 6px 5px;
+		font-size: 24px;
+	}
+	
+	.social-profile{ width:100%;}
+	.social-profile .coaches-fans input{ width:77%;}
+	.full-profile, .post{ font-size:12px;}
+	.social-profile .coaches-fans fieldset .save{ font-size:18px !important;}
+	.social-profile .coaches-fans fieldset .prev{ font-size:18px !important;}
+	.social-profile .coaches-fans fieldset .publish{ font-size:18px !important;}
+	.scoutsview-vdo .confirmation{margin-bottom: 20px;}
+		.scoutsview-vdo .confirmation span{ width:100%; float:none;margin-bottom: 25px;}
+		.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}
+	/*	.container .row{ margin:0 !important;}*/
+	
+	/*-----------------------End of Academic Profile Styles---------------------*/
+}
+@media screen and (max-width: 350px){
+	.social-profile .coaches-fans fieldset.link-btn input{
+		width: 100%;
+		margin-bottom: 10px;
+		margin-left: 0;
+	}
+	.inner-8-leaderboard p {
+		font-size: 15px;
+	}
+	.inner-8 fieldset .upgrade{
+			width: 100%;
+			margin-left: 0;
+			font-size: 15px;
+	}
+	.fb-friend li h4{
+		margin-left: 0;
+	}
+	#fan-base .msg-container > div{
+			padding: 0;
+		}
+		
+	.social-profile .coaches-fans fieldset .save{ font-size:18px !important;}
+	.social-profile .coaches-fans fieldset .prev{ font-size:18px !important;}
+	.social-profile .coaches-fans fieldset .publish{ font-size:18px !important;}
+	.full-profile, .post{ font-size:12px;}
+	.scoutsview-vdo .confirmation span{ width:100%; float:none;}
+	.scoutsview-vdo .vdo .plya-btn span > em{ padding-top:15px; font-size:12px;}
+	.scoutsview-vdo .vdo .plya-btn span a img{ display:block; text-align:center; margin:10px auto 0 auto;}
+	.import-statistics .statistic-database span{ font-size:14px;}
+	.fill-out .btn{ margin:10px auto 10px auto; display:block; text-align:center;}
+
+}
+

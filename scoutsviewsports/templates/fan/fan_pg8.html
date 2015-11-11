@@ -1,0 +1,264 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="fan-pg award-pg">  -->
+		<header class="header no-border">
+        	<div class="">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/fan-images/fan-photo_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Fan</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Mickey McCool</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Fan FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Fan Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Shine <span class="block">Stars</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan Group <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Network <span class="block">Manager</span></a></li>
+                                <li class="active"><a href="#">Fan <span class="block">Photos</span></a></li>
+                                <li><a href="#">Fan <span class="block">News</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="row"><span class="ticker-msg">Add your fan photo gallery here</span></div>
+                        
+                    </div>
+                    <div class="col-md-4  col-sm-4 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class=" container inner-4">
+        	<div class="row clearfix" id="tabs">
+                <div id="edit-photos" class="col-md-12">
+                    <div class="clearfix photo-title">
+                    	<div class="col-md-5">
+                        	<div class="row">
+                                <img src="images/uploads/athlete_pg4_03.jpg" alt="" class="mbm img-responsive"/>
+                                <div class="fileUpload btn btn-primary ">
+                                    
+                                    <span>Upload Photo</span>
+                                    <i class="fa fa-caret-up"></i>
+                                    <input type="file" class="upload">
+                                </div>
+                                <div class="fileUpload btn btn-primary ">
+                                    
+                                    <span>Add Another Photo</span>
+                                    <i class="fa fa-plus"></i>
+                                    <input type="file" class="upload">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 pd0">
+                        	<div class="row">
+                                <div class="title">
+                                    <h3>Title Photo</h3>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="description">
+                                    <h3>Photo Description (50 word limit)</h3>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-carousel mtxxl">
+                    	<h3>Uploaded Photos</h3>
+                    	<div id="slider1">
+                          <div class="slide">
+                          	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                            </div>
+                          	<img src="images/uploads/slide1.jpg">
+                           </div>
+                          <div class="slide">
+                              <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                        <ul>
+                                            <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                            <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                        </ul>
+                                </div>
+                          		<img src="images/uploads/slide2.jpg">
+                           </div>
+                          <div class="slide">
+                              <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                        <ul>
+                                            <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                            <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                        </ul>
+                                </div>
+                          	<img src="images/uploads/slide3_07.jpg">
+                           </div>
+                          <div class="slide">
+                          	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                            </div>
+                          	<img src="images/uploads/slide3_07.jpg">
+                          </div>
+                          <div class="slide">
+                          	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                            </div>
+                          	<img src="images/uploads/slide3_07.jpg">
+                          </div>
+                     	</div>
+                    </div>
+                </div>
+              </div>
+             <fieldset class="link-btn">
+      			<input type="button" value="Save Progress" class="mbm save"> 
+                <input type="button" value="Preview This" class="mbm prev"> 
+                <input type="button" value="Publish Page" class="mbm publish disabled">
+             </fieldset>
+        </div>
+		
+        <script type="text/javascript">
+
+		$(window).load(function(){	
+			
+			var slider1 =  $("#slider1").bxSlider({
+				slideWidth: 164,
+				moveSlides: 1,
+				minSlides: 1,
+				maxSlides: 5,
+				slideMargin: 16
+			  });
+			 var slider2 =  $("#slider2").bxSlider({
+				slideWidth: 164,
+				moveSlides: 1,
+				minSlides: 1,
+				maxSlides: 5,
+				slideMargin: 16
+			  });
+			  $('.edit-photos').on('click', function(){
+				  	slider2.reloadSlider({
+						slideWidth: 164,
+						moveSlides: 1,
+						minSlides: 1,
+						maxSlides: 5,
+						slideMargin: 16
+					});
+					$("#edit-videos").hide();
+					$("#edit-photos").show();
+				})
+				$('.edit-videos').on('click', function(){
+					slider1.reloadSlider({
+						slideWidth: 164,
+						moveSlides: 1,
+						minSlides: 1,
+						maxSlides: 5,
+						slideMargin: 16
+					});
+					$("#edit-photos").hide();
+					$("#edit-videos").show();
+					
+				})
+			
+		})
+		</script>
+{% endblock %}

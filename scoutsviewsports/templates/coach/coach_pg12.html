@@ -1,0 +1,204 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="coach-pg"> -->
+		<header class="header no-border">
+        	<div class="coach-bg ">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/coach-images/coach_pg2a_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Coach</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Nick Saban</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+
+
+
+
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Coach Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Star <span class="block">Athletes</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Coach Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Prototype <span class="block">Athlete Search</span></a></li>
+                                <li><a href="#">Stats and <span class="block">Analytics</span></a></li>
+                                <li><a href="#">Coach <span class="block">Resources</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <div class="row"><span class="ticker-msg">Welcome to Scoutsview</span></div>
+                        
+                    </div>
+                    <div class="col-md-2  col-sm-2 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count">1</span>
+                                <img src="images/coach-images/msg.png"  alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      	<div class="container inner-11">
+        	<div class="row">
+            	<div class="col-md-2">
+                	<div class="profile-image center">
+                    	<img src="images/coach-images/coach_pg12a_1_03.png" alt="" />
+                        <p><a href="#">Edit Profile Image</a></p>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                <div class="row">
+                	<div class=" col-md-4 profile-details mbxl">
+                    	<div class="row">
+                    	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                    	<h3>Coach Nick Saban</h3>
+                        <p>Louisiana State University</p>
+                        <p>Baton Rouge, Louisiana</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    	<ul class="col-md-12 inner11col1">
+                        	<li><span class="blue">Coaching Tenure:</span> 25 years</li>
+                            <li><span class="blue">Sport Coached:</span> Football</li>
+                            <li><span class="blue">Notable Athletes:</span> Dee milliner, Chance Warmack and D.J.Fluker</li>
+                        </ul>
+                    </div>
+            
+                
+                 </div>
+                </div>
+                
+            </div>
+            <div class="row">
+            	<div class="tabcontainer">
+                	<ul class="nav nav-tabs responsive" role="tablist" id="xyz">
+                      <li class="active"><a href="#profile" role="tab" data-toggle="tab">Coach Profile</a></li>
+                      <li><a href="#stats" role="tab" data-toggle="tab">Our Program</a></li>
+                    </ul>
+                    <div class="tab-content responsive">
+                      <div class="tab-pane active" id="profile">
+                      <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                      	<h3 class="heading-title">About Me </h3>
+                        <p class="mbl">Li Europan lingoes es membres del sam familie. Lor separat existentie es on myth. For scientie, musica, Sport etc, Ii tot Europa usa Ii sam vocabularium. Li lingoes differe solmen in Ii grammatica, Ii pronunciation eIi plu common vocabules. Omnicos directe al desirabilita; de on nov lingua. </p><p class="mtxxl"> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.</p>
+                      </div>
+                      <div class="tab-pane" id="stats">
+                      		<div class="edit_section" data-toggle="tooltip" data-placement="top" title="Edit or Delete">
+                            	<ul>
+                                	<li class="edit mbs"><a class="edit_delete" href="#" ></a></li>
+                                    <li class=" delete"><a class="edit_delete"  href="#"></a></li>
+                                </ul>
+                            </div>
+                            <h3 class="heading-title mbl">About Program </h3>
+                            <p class="mbl">Li Europan lingoes es membres del sam familie. Lor separat existentie es on myth. For scientie, musica, Sport etc, Ii tot Europa usa Ii sam vocabularium. Li lingoes differe solmen in Ii grammatica, Ii pronunciation eIi plu common vocabules. Omnicos directe al desirabilita; de on nov lingua. </p><p class="mtxxl"> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		
+        <script type="text/javascript">
+		$(document).ready(function(){
+			fakewaffle.responsiveTabs(['xs', 'sm']);	
+		})
+		</script>
+{% endblock %}     
+

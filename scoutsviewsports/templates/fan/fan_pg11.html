@@ -1,0 +1,340 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<!--    <body class="fan-pg award-pg">  -->
+		<header class="header no-border">
+        	<div class="">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="images/fan-images/fan-photo_02.png" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Fan</p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Mickey McCool</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Fan FAQs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+       	<div class="header-tab-container">
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12" id="profile-manager-container">
+                    	<div class="row">
+                            <ul class="header-tab" id="profile-manager">
+                                <li><a href="#">Fan Profile <span class="block">Manager</span></a></li>
+                                <li><a href="#">My Shine <span class="block">Stars</span></a></li>
+                                <li><a href="#">My Forum <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan Group <span class="block">Manager</span></a></li>
+                                <li><a href="#">Social Network <span class="block">Manager</span></a></li>
+                                <li><a href="#">Fan <span class="block">Photos</span></a></li>
+                                <li><a href="#">Fan <span class="block">News</span></a></li>
+                                <li><a href="#">Scoutsview <span class="block">Video Blog</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="row"><a href="#" class="publish-btn">Publish Profile</a><span class="ticker-msg">This is a preview of your profile</span></div>
+                        
+                    </div>
+                    <div class="col-md-4  col-sm-4 fr">
+                        <ul>
+                            
+                            <li class="ticker-freinds">
+                            	<span class="msg-count hide">1</span>
+                                <img src="images/icons/msg.png" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      	<div class="container inner-11">
+        	<div class="row">
+            	<div class="col-md-2">
+                	<div class="profile-image center">
+                    	<img src="images/fan-images/fan_pic.png" alt="" />
+                        <p><a href="#">Edit Profile Image</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                <div class="row fan-details">
+                	<div class=" col-md-12 profile-details mbxl">
+                    	<div class="row">
+                    	<div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                    	<h3>Micky McCool</h3>
+                        <p>Dallas, Texas</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    	<ul class="col-md-12 inner11col1">
+                        	<li class="mbxxl"><span class="blue">Favourite Team:</span> Dallas Cowboys, Horned Frogs</li>
+                            <li><span class="blue">Something Interesting About Me:</span> I LOVE RUGBY!!! I LOVE RUGBY!!! I LOVE RUGBY!!!</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                    	<ul>
+                        	<li class="icon1">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon2">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon3">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon4">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon5">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon6">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon7">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon8">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon9">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon10">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon11">
+                            	<a href="#"></a>
+                            </li>
+                            <li class="icon12">
+                            	<a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                
+                 </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row scout-tip">
+                        <div class="close-tip"></div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <h5 class="scout-alert">Please do not use Scoutsview to hawk products otherwise you will be removed</h5>
+                                <p>This banner needs to establish some ground rules for fans. No Spam, No Cursing, No Threats...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="tabcontainer">
+                	<ul class="nav nav-tabs responsive" role="tablist" id="xyz">
+                      <li class="active"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+                      <li><a href="#photos" role="tab" data-toggle="tab">Photos</a></li>
+                    </ul>
+                    <div class="tab-content responsive">
+                      <div class="tab-pane active" id="profile">
+                      <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                            <ul>
+                                <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                            </ul>
+                        </div>
+                      	<h3 class="heading-title">About Me </h3>
+                        <p class="mbl">Li Europan lingoes es membres del sam familie. Lor separat existentie es on myth. For scientie, musica, Sport etc, Ii tot Europa usa Ii sam vocabularium. Li lingoes differe solmen in Ii grammatica, Ii pronunciation eIi plu common vocabules. Omnicos directe al desirabilita; de on nov lingua. </p><p class="mtxxl"> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.</p>
+                      </div>
+                      <div class="tab-pane clearfix" id="photos">
+                      	<ul>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_07.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/athlete_pg11_03.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_05.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                            <li class="clearfix no-border">
+                                <div class="edit_section" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Delete">
+                                    <ul>
+                                        <li class="edit mbs"><a class="edit_delete" href="#"></a></li>
+                                        <li class=" delete"><a class="edit_delete" href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <img src="images/photos/photos_07.jpg" alt="Vid1">                       
+                                <p>Photo title &amp; description will appear here</p>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		
+        <script type="text/javascript">
+		$(document).ready(function(){
+			fakewaffle.responsiveTabs(['xs', 'sm']);	
+		})
+
+
+		$(window).load(function(){	
+			var flag = true;
+			//$( "#sendtabs" ).tabs();
+			$('.close-tip').on('click', function(){
+				$('.scout-tip').hide();	
+			})		
+
+		})
+
+		</script>
+{% endblock %}

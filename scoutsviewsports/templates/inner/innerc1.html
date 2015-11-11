@@ -1,0 +1,185 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<header class="header home">
+        	<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="login-wrapper ">
+                    <div class="btn btn-primary" ><a href="#"><span class="lock_icon">Sign in</span></a></div>
+                    <div class="social-media-login ">
+                        <div class="triangle-up blue"></div>
+                        <div class="fb-login mbm">
+                            <a href="#"><img src="images/fb_btn.jpg" alt="Faceboook login" /></a>
+                        </div>
+                        <div class="fb-login">
+                            <a href="#"><img src="images/Twitter_btn.jpg" alt="Faceboook login" /></a>
+                        </div>
+                    </div>
+                </div>
+                	</div>
+                </div>
+            </div>
+        </header>
+        <div class="inner-1 coach-1">
+        	<h1>Just 1 More Step!</h1>
+            <p>Please answer the questions below to complete the <a href="#" class="light-blue">Coach</a> Signup Process</p>
+            <form method="post" >
+            	<fieldset class="clearfix">
+                	<input id='middleschool' type='radio' class='radiobutton form-control' name="school">
+                     <label  class='radiobutton1-label border-left' for='middleschool'>Middle School Coach</label>
+                     
+                     <input id='highschool' type='radio' class='radiobutton form-control' name="school" checked>
+                     <label  class='radiobutton1-label reslabel' for='highschool'>High School Coach</label>
+                     
+                     <input id='college' type='radio' class='radiobutton form-control' name="school">
+                     <label class='radiobutton1-label reslabel' for='college'>College Coach</label>
+                        
+                    <!--<input type="text" class="icon-graduation-cap first-input fl" placeholder="Middle School">
+                    <input type="text" class="high-school fl" placeholder="High School">
+                    <input type="text" class="college fl" placeholder="College">-->
+                </fieldset>
+                <fieldset class="clearfix ">
+                    <input type="text" class="icon-school first-input fl form-control" placeholder="School, College or University">
+                </fieldset>
+                <fieldset class="clearfix street-add ">
+                    <input type="text" class="icon-location first-input fl form-control" placeholder="Your School, College or University Address">
+                </fieldset>
+                <fieldset class="clearfix ">
+                    <input type="text" class="icon-birthday first-input fl form-control" id="datetimepicker1" placeholder="Your Birthdate">
+                    <div class='radiobtn clearfix'>
+                    <input id='female' type='radio' class='radiobutton form-control' checked name="sex">
+                        <label  class='radiobutton-label icon-female' for='female'>Female</label>
+                      <input id='male' type='radio' class='radiobutton form-control' name="sex">
+                        <label class='radiobutton-label icon-male' for='male'>Male</label>
+                      
+                    </div>
+                </fieldset>
+	             <p><a href="#">Why do I need to provide my birthday?</a></p>
+                 <p class="center"><button type="submit" class="btn btn-primary btn-lg green-btn mbm">Submit</button></p>
+                 <p class="center agree">By submitting this information, you agree to our sites <a href="#">rules and regulations.</a></p>
+            </form>
+            
+        </div>
+        <footer class="footer">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-8">
+                    	<div class="col-xs-12 col-sm-4 col-md-4">
+                        	<p class="title">ABOUT SCOUTSVIEW</p>
+                            <ul>
+                            	<li><a href="#">What We Do</a></li>
+                                <li><a href="#">Meet The Team</a></li>
+                                <li><a href="#">Why We're Different</a></li>
+                                <li><a href="#">Partner With Us</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        	<p class="title">GENERAL RESOURCES</p>
+                            <ul>
+                            	<li><a href="#">Campus Tours</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Parents</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Our Partners</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        	<p class="title">MEDIA CENTER</p>
+                            <ul>
+                            	<li><a href="#">Press Room</a></li>
+                                <li><a href="#">Video Library</a></li>
+                                <li><a href="#">Photo Gallery</a></li>
+                                <li><a href="#">Articles</a></li>
+                                <li><a href="#">Investors</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 subscribe">
+                    	<p>WANT TO RECEIVE OUR UPDATES?</p>
+                        <form method="post">
+                        	<input type="email" placeholder="Your Email">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <p>FOLLOW US</p>
+                        <ul class="social-links">
+                        	<li><a href="#"><img src="images/fb_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/googleplus_icon.jpg" alt="Google +" /></a></li>
+                            <li><a href="#"><img src="images/insta_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/linkedin_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/pintrest_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/twitter_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/twitter1_icon.jpg" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="images/youtube_icon.jpg" alt="Facebook" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-md-12">
+                    	<ul class="copyright-text">
+                        	<li><span class="copyright">Copyright &copy; 2014 Scoutsview. All Rights Reserved.</span></li>
+                            <li><a href="#"> Privacy Policy<span class="pipe">|</span></a></li>
+                            <li><a href="#">Terms of Use</a><span class="pipe">|</span></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('#datetimepicker1').datepicker();	
+				$('.login-wrapper').on('click',function(){
+					$('.social-media-login').toggle();
+				})	
+			})
+		</script>
+{% endblock %}

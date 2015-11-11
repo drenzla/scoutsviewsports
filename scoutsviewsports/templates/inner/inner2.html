@@ -1,0 +1,192 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<header class="header no-border">
+        	<div class="blue-bg">
+            	<div class="white"></div>
+        		<div class="container">
+            	<div class="row">
+                	<div class="logo col-md-3">
+                        <a href="#">
+                            <img src="{% static 'images/logo.jpg' %}" alt="Scoutsview Logo" />
+                        </a>
+                    </div>
+                    <div class="col-md-9 navigation-wrap">
+                	<nav class="primary-nav navbar navbar-default ">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle drop-down-icon ">Athlete <span class="block">Profiles</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" data-toggle="dropdown"  class="dropdown-toggle drop-down-icon">Athlete <span class="block">Resources</span></a>
+                                <ul role="menu" class="sec-nav dropdown-menu">
+                                    <li><a href="#">Middle School</a></li>
+                                    <li><a href="#">High School</a></li>
+                                    <li><a href="#">College</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/as_coach/">Coaches <span class="block">& Scouts</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Info For<span class="block">Parents</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Online <span class="block">Store</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+                	<div class="logged-in clearfix">
+                    	<div class="user-pic fl">
+                        	<img src="{% static 'images/photos/user-pic_02.jpg' %}" alt="User pic">
+                        </div>
+                        <div class="user-details fl">
+                        	<p>Athlete <a href="#">(Upgrade)</a></p>
+                            <p>Profile <a href="#">(Unpublished)</a></p>
+                            <p class="athlete-name">Tommy Trahan</p>
+                        </div>
+                        <div class="sec-dropdown">
+                    	<ul class="fl">
+                        	<li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Accounts</a></li>
+                            <li><a href="#">My Analytics</a></li>
+                            <li><a href="#">Campus Tours</a></li>
+                            <li><a href="#">Athlete FAQs</a></li>
+                        </ul>
+                        <ul class="fr">
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">The Rules</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                	</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="user-ticker-container top-border">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="row"><span class="ticker-msg">This is your FREE Basic Athlete Profile <a href="#">See why a full profile pays off</a></span></div>
+                        
+                    </div>
+                    <div class="col-md-4  col-sm-4 fr">
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/icons/friends.png' %}" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/icons/fav.png' %}" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/icons/fav.png' %}" alt="friends" />
+                                <span class="count block">0</span>
+                            </li>
+                            <li class="ticker-freinds">
+                                <img src="{% static 'images/icons/msg.png' %}" alt="friends" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       	<div class="inner-2 container">
+        	<div class="row mbxxl">
+                <div class="col-xs-12 col-md-3 basic-profile athlete-profile-manager mbxxl">
+                    <h3>Athletic Profile <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/profile-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>Build Your FREE Basic Athletic Profile Here</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile mbxxl">
+                    <h3>Media <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/media-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>Upload Your Game Film And Game Photos Here</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile mbxxl">
+                    <h3>My Forum <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/forum-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>You Have 1 New Post From Scoutsview</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile fan-manager mbxxl">
+                    <h3>Fan <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/fan-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>You Have 0 Fans. Build Your Fan Base Here</p>
+                </div>
+            </div>
+            <div class="row mtxxl mbxxl">
+                <div class="col-xs-12 col-md-3 basic-profile athlete-profile-manager mbxxl">
+                    <h3>Academic Profile <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/academic-profile-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>Build Your Academic Profile Here</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile mbxxl">
+                    <h3>My Stars <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/stars-manager.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>You have 0 Leaderboard Stars and 0 My Shine Stars</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile mbxxl">
+                    <h3>Social Networks <span class="block">Manager</span></h3>
+                    <img src="{% static 'images/icons/social-manager.png' %}"class="mbl" width="86" height="86" alt="" />
+                    <p>Increase Your Exposure and Promote Your Social Networks</p>
+                </div>
+                <div class="col-xs-12 col-md-3 basic-profile fan-manager mbxxl">
+                    <h3>Scoutsview <span class="block">Video Blog</span></h3>
+                    <img src="{% static 'images/icons/video-blog.png' %}" class="mbl" width="86" height="86" alt="" />
+                    <p>Watch the 10 Minute Orientation from our CEO</p>
+                </div>
+            </div>
+            <div class="row ">
+            	<div class="col-md-12 nop" id="tabs">
+                    <ul>
+                        <li class="fl">
+                            <a href="#leaderboard-rel">
+                        <button type="button" class="btn btn-primary fl blue-btn" data-toggle="button"><span class="green-icon glyphicon glyphicon-star"></span>Top 10 Leaderboard Stars</button>
+                            </a>
+                         </li>
+                         <li class="fl">
+                            <a href="#shine-rel">
+                        <button type="button" class="btn btn-primary fr green-btn" data-toggle="button"><span class="yellow-icon glyphicon glyphicon-star"></span>Top 10 My Shine Stars</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+		<footer>
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-12">
+                    	<p class="footer-copyright-text">Copyright &copy; 2014 Scoutsview. All Rights Reserved.</p>
+                    </div>
+                 </div>
+             </div>
+        </footer>
+		
+{% endblock %}

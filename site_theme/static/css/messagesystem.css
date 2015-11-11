@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* CSS Document */
+.mtxl{
+	margin-top: 20px;
+}
+.inbox_icon{
+	background: url(../images/message%20sytem/message_icon.png) no-repeat;
+	width: 20px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.save_icon{
+	background: url(../images/message%20sytem/save_icon.png) no-repeat;
+	width: 14px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.sent_icon{
+	background: url(../images/message%20sytem/send_icon.png) no-repeat;
+	width: 21px;
+	height: 12px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.sent_iconlg{
+	background: url(../images/message%20sytem/send_iconlg.png) no-repeat;
+	width: 23px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.outbox_icon{
+	background: url(../images/message%20sytem/upload_icon.png) no-repeat;
+	width: 15px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.trash_icon{
+	background: url(../images/message%20sytem/trash_icon.png) no-repeat;
+	width: 11px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.attach_icon{
+	background: url(../images/message%20sytem/attachment_icon.png) no-repeat;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.msg-system{
+	margin-top: 35px;
+	padding-bottom: 30px;
+}
+.msg-system .msg-count{
+	color: #15759e;
+	font-family: OpenSans-Bold;
+	letter-spacing: 2px;
+}
+.msg-system-filter-menu{
+	border: 1px solid #3a3a3a;
+}
+.msg-system-filter-menu li{
+	border-right: 1px solid #383838;
+	list-style: none;
+	float: left;
+	width: 20%;
+	text-align: center;
+
+}
+.msg-system .mail-action .btn-lg,.msg-system .close-history-btn{
+	padding: 5px 20px;
+	margin-right: 10px;
+	background: #00769e;
+	box-shadow: none;
+}
+.msg-system .mail-action .btn-lg:hover{
+	background: #00436B;
+}
+.msg-system .close-history-btn:hover, .msg-system .mail-action .green-btn:hover{
+	background:#156F00;
+}
+.msg-system .mail-action .green-btn{
+	background: #48a227;
+}
+.msg-system-filter-menu li:last-child{
+	border-right: 0;
+}
+.msg-system-filter-menu li.active{
+	background: #f2f2f2;
+}
+.msg-system-filter-menu li a{
+	display: inline-block;
+	color: #383838;
+	padding: 15px 0;
+	width: 100%;
+}
+.mail-collection-list li a >span {
+	width: 30px;
+}
+.msg-system .mail-collection-list{
+	border-top: 9px solid #007796;
+	padding-top: 20px;
+	border-right: 1px solid #9d9d9d;
+	padding-left: 15px;
+	min-height: 465px;
+	z-index: 600;
+}
+.msg-system .mail-collection-list li{
+	margin-bottom: 15px;
+}
+.msg-system .mail-collection-list li a{
+	color: #707070;
+}
+.msg-system .mailbox li{
+	padding: 10px 25px 10px 10px;
+	border-bottom: 1px solid #979797;
+}
+
+.msg-system .mailbox li:nth-child(odd) {
+	background: #e9e9e9;
+}
+.msg-system .mailbox li:hover{
+	background: #d5d5d5;
+}
+.msg-system .mailbox li.unread{
+	border-left: 8px solid #007799;
+	padding: 10px 25px 10px 2px;
+	
+}
+.msg-system .mailbox li.unread p,.msg-system .mailbox li.unread span{
+	font-weight: bold;
+}
+.msg-system .mailbox .sender-name{
+	width: 20%;
+	display: inline-block;
+	padding: 0 10px;
+}
+.msg-system .mailbox .mail-subject{
+	width: 50%;
+	display: inline-block;
+	padding: 0 10px;
+}
+.msg-system .mailbox .mail-date{
+	width: 30%;
+	display: inline-block;
+	padding: 0 10px;
+}
+/*-------------------------------------------------------message2 Styles------------------------------*/
+.msg-system .email-subject{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #9d9d9d;
+}
+.msg-system .email-subject h1{
+	font-family: OpenSans-Semibold;
+	font-size: 24px;
+	color:#15759e;
+	padding-bottom: 10px;
+}
+.msg-system .email-subject p{
+	color: #707070;
+	font-size: 16px;
+	line-height: 23px;
+}
+.msg-system .send-message{
+	margin-top: 25px;	
+}
+.msg-system .send-message textarea{
+	width: 100%;
+	min-height: 270px;
+	resize: none;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+}
+.msg-system .send-message .send-btn{
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px 30px;
+	background: #00769e;
+	box-shadow: none;
+}
+.msg-system .send-message .send-btn:hover{
+	background: #00436B;
+}
+.msg-system .send-message .attachment{
+	color: #1f1d1e;
+}
+/*----------------------------------------------message3 styles-----------------------------------*/
+.msg-system .conversation-history{
+	padding: 20px 0;
+}
+.msg-system .conversation-history .chat-history li{
+	margin-bottom: 30px;
+}
+.msg-system .conversation-history h2{
+	font-family: OpenSans-Semibold;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+.msg-system .conversation-history h2.you{
+		color:#15759e;
+}
+.msg-system .conversation-history h2.other{
+	color: #48a226;
+}
+.msg-system .conversation-history p{
+	color: #707070;
+	font-size: 16px;
+	line-height: 23px;
+}
+/*-------------------------------------------------message5 styles-------------------------------------*/
+.msg-system .msg-system-inbox{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #9d9d9d;
+}
+.msg-system .msg-system-inbox p{
+	color: #707070;
+	padding-bottom: 10px;
+}
+.msg-system .msg-system-inbox .inbox-content{
+	margin-top: 50px;
+	text-align: center;
+}
+/*---------------------------------------------------Custom styles for checkbox-----------------------------*/
+	.msg-system form{
+		display: inline;
+	}
+	.msg-system .sender-name label{
+		margin-right: 5px;
+	}
+	.msg-system .custom-checkbox{
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		top: 3px;
+		background: url("../images/message%20sytem/checkbox.png") no-repeat;
+	}
+	.msg-system .custom-checkbox:hover{
+		background: urlurl(../images/message%20sytem/checkbox-hover.png) no-repeat;
+	}
+	.msg-system .custom-checkbox.selected{
+		background: url(../images/message%20sytem/checkbox-selected.png) no-repeat;
+	}
+	.msg-system .custom-checkbox input[type="checkbox"]{
+		margin: 0;
+		position: absolute;
+		z-index: 2;            
+		cursor: pointer;
+		outline: none;
+		opacity: 0;
+		/* CSS hacks for older browsers */
+		_noFocusLine: expression(this.hideFocus=true); 
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		-khtml-opacity: 0;
+		-moz-opacity: 0;
+	}
+/*---------------------------------------------------End of Custom styles for checkbox-----------------------------*/  
+
+.nav_open{
+	display: block !important;
+	position: absolute;
+	top: 0;
+}
+.msg-system .menu-bar-icon{
+	display: none;
+	background: url(../images/message%20sytem/menu_icon.png) no-repeat;
+	width: 21px;
+	height: 26px;
+	vertical-align: middle;
+	margin-right: 13px;
+	
+}
+.msg-system .msg-icon-lg{
+	display: none;
+	background: url(../images/message%20sytem/msg_icon.png) no-repeat;
+	width: 53px;
+	height: 35px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.msg-system .hidden-date{
+	display: none;
+}
+.msg-system .mailbox-wrapper{
+	position: relative;
+}
+.slicknav_menu .slicknav_menutxt{
+	text-shadow: none;
+}
+.msg-system .slicknav_btn{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #838383;
+	padding: 18px 10px;
+	margin: 18px 0 0;
+}
+.msg-system .slicknav_menu{
+	background: #fff;
+}
+.msg-system ul.slicknav_nav{
+background: #1e3e67;
+}
+.msg-system .slicknav_menu .slicknav_icon {
+	float: right;
+}
+.msg-system .slicknav_menu .slicknav_menutxt,.msg-system .slicknav_menu .slicknav_icon-bar {
+	color: #848484;
+}
+@media (max-width:1200px){
+	.msg-system .slicknav_menu {
+		display: none;
+	}
+}
+@media (max-width: 991px){
+	.msg-system .mail-action{
+		margin-top: 0;
+	}
+	.hide-on-device{
+		display: none !important;
+	}
+	.msg-system .mailbox .sender-name {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.msg-system .mailbox .mail-subject{
+		width: 100%;
+	}
+	.msg-system .mailbox .mail-date{
+		display: none;
+	}
+	.msg-system .hidden-date{
+		display: inline-block;
+	}
+	.msg-system{
+		margin-top: 0;
+	}
+	.msg-system-filter-menu{
+		display: none;
+	}
+	.msg-system .slicknav_menu {
+		display: block;
+	}
+	.responsive-nav-bar{
+		background: #1e3e67;
+		padding: 13px 30px 13px 10px;
+	}
+	.msg-system .msg-icon-lg, .msg-system .menu-bar-icon{
+		display: inline-block;
+	}
+	.mail-collection-list{
+		width: 150px;
+		display: none;
+	}
+	.compose-btn{
+		float: right;
+	}
+	.history-btn, .delete-btn{
+		display: none;
+	}
+}
+@media (max-width:967px){
+	.msg-system form{
+		display: none;
+	}
+}
+@media (max-width: 420px){
+	.msg-system .send-message .send-btn {
+		padding: 10px 20px;
+	}
+}
